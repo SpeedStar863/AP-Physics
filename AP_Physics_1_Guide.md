@@ -1,7 +1,7 @@
 
 Welcome! I am delighted to be your mentor through one of the hardest classes you will take in high school, but by the end of your experience, these tricky concepts will transform into basic logic. College Board has notoriously made this course one of its most challenging, but after you give me a little bit of your time and attention each day, I guarantee that you will get something out of this. It is my passion to help students feel less pressure in the classroom, so I made this guide as beginner-friendly as possible. Let's start with Unit 1: Kinematics.
 
-## KINEMATICS
+## KINEMATICS: Lesson 1
 
 Before we start, let's learn a few essential key points and definitions. Kinematics combines algebra and geometry to analyze motion in objects but ignores the effects of forces, which will play a role in an object's motion as the course develops.
 
@@ -69,3 +69,7 @@ Next, I want you to think of the term scalar, how can we transform a vector quan
 #### Practice
 
 [Let's test your knowledge, take the vector & scalar quiz here](Quiz.html)
+
+
+## Lesson 2:
+

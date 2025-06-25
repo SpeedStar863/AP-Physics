@@ -98,7 +98,21 @@ function check(btn, correct, message, feedbackId) {
 
 <div id="feedback8" style="margin-top:10px; font-weight:bold;"></div>
 
-<p>9. </p>
+<p>9. What is the purpose of kinematics?</p>
+<button class="quiz-btn" onclick="check(this, false, 'Incorrect, energy will be focused on next unit', 'feedback9')">To measure the amount of energy in relation to an object</button>
+<button class="quiz-btn" onclick="check(this, false, 'Actually, kinematics does not account for forces', 'feedback9')">To measure force in relation to an object</button>
+<button class="quiz-btn" onclick="check(this, true, 'Correct! Kinematics focuses on basic motion, without regard to forces', 'feedback9')">To analyze motion in objects without attention to forces</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite. Kinematics is used for basic motion, not magnetic fields', 'feedback9')">To study the magnetic fields of objects</button>
+
+<div id="feedback9" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>10. What does a physicist do?</p>
+<button class="quiz-btn" onclick="check(this, true, 'Exactly right! Key word, physics!', 'feedback10')">Study physics</button>
+<button class="quiz-btn" onclick="check(this, false, 'Physics is not related to athletics!', 'feedback10')">Study sports</button>
+<button class="quiz-btn" onclick="check(this, false, 'They\'re not doctors!', 'feedback10')">Study medicine</button>
+<button class="quiz-btn" onclick="check(this, false, 'They\'d be better at... physics!', 'feedback10')">Study law</button>
+
+<div id="feedback10" style="margin-top:10px; font-weight:bold;"></div>
 
 </body>
 </html>
