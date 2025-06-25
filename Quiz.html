@@ -1,0 +1,104 @@
+<html><head><style>
+.quiz-btn {
+  background-color: #f0f0f0;
+  border: 2px solid #0074D9;
+  color: #0074D9;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.quiz-btn:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+</style>
+
+<script>
+function check(btn, correct, message, feedbackId) {
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  const feedback = document.getElementById(feedbackId);
+  feedback.innerHTML = message; // Use innerHTML for MathJax
+  if (window.MathJax) {
+    MathJax.typesetPromise([feedback]);
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head>
+
+<body>
+
+<h1>Practice Quiz #1</h1>
+
+<p>1. Which of the following is a vector quantity?</p>
+
+<button class="quiz-btn" onclick="check(this, false, 'Speed is a scalar; it has no direction.', 'feedback')">Speed</button>
+<button class="quiz-btn" onclick="check(this, false, 'Distance is a scalar; it only has magnitude.', 'feedback')">Distance</button>
+<button class="quiz-btn" onclick="check(this, true, 'Correct! Velocity has both magnitude and direction.', 'feedback')">Velocity</button>
+<button class="quiz-btn" onclick="check(this, false, 'Temperature is a scalar; it does not have direction.', 'feedback')">Temperature</button>
+
+<div id="feedback" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>2. Which of the following is the magnitude of acceleration?</p>
+<button class="quiz-btn" onclick="check(this, false, 'This quantity represents speed, not acceleration', 'feedback2')">v</button>
+<button class="quiz-btn" onclick="check(this, false, 'This quantity represents distance, not acceleration', 'feedback2')">d</button>
+<button class="quiz-btn" onclick="check(this, true, 'Correct! a is the symbol for acceleration', 'feedback2')">a</button>
+<button class="quiz-btn" onclick="check(this, false, 'This quantity represents time, not acceleration', 'feedback2')">t</button>
+
+
+<div id="feedback2" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>3. If the magnitude of a vector is positive, can the quantity be negative?</p>
+
+<button class="quiz-btn" onclick="check(this, true, 'Correct! Magnitude is positive regardless and does not acount for direction', 'feedback3')">Yes, the quantity can be negative</button>
+<button class="quiz-btn" onclick="check(this, false, 'Remember, a vector can only be negative with regard to direction not magnitude', 'feedback3')">No, the quantity cannot be negative</button>
+
+<div id="feedback3" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>4. Which of the following statements are <b>false?</b></p>
+
+<button class="quiz-btn" onclick="check(this, false, 'Actually, displacement is the change in position of an object', 'feedback4')">Displacement and position are related</button>
+<button class="quiz-btn" onclick="check(this, true, 'Exactly! Acceleration measures the change of velocity over time', 'feedback4')">Acceleration and velocity are not related</button>
+<button class="quiz-btn" onclick="check(this, true, 'Right! Vectors have magnitude and direction while scalar quantities only have magnitude', 'feedback4')">Vectors have one component while scalar quantities have two</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite. Vectors do have two parts, magntitude and direction, while scalar quantities have one, magnitude', 'feedback4')">Vectors have two components while scalar quantities have one</button>
+
+<div id="feedback4" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>5. A physicist walks across a road but picks up speed as he continues. His students mark a steady increase in velocity over a period of 10 seconds. How is velocity and acceleration contributing to the physicist's position change?</p>
+<button class="quiz-btn" onclick="check(this, true, 'Correct! Acceleration is constant since velocity is increasing at a steady rate', 'feedback5')">Acceleration is constant and velocity is increasing</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite. Acceleration is not increasing and velocity cannot be constant since the physicist is increasing speed', 'feedback5')">Acceleration is increasing and velocity is constant</button>
+<button class="quiz-btn" onclick="check(this, false, 'Actually, acceleration is not decreasing since the physicist is gaining momentum')">Both acceleration and velocity are decreasing</button>
+<button class="quiz-btn" onclick="check(this, false, 'Keep in mind that velocity is increasing at a steady rate, not a variable rate, so acceleration cannot be increasing')">Both acceleration and velocity are increasing</button>
+
+<div id="feedback5" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>6. What does &rarr; mean in physics?</p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite. The x variable is not used for position', 'feedback6')">The position of an object</button>
+<button class="quiz-btn" onclick="check(this, false, 'Although meaning direction, the arrow is not present in scalar quantities', 'feedback6')">The direction of a scalar quantity</button>
+<button class="quiz-btn" onclick="check(this, false, 'Actually, velocity is represented as \\( \\vec{v} \\)', 'feedback6')">Velocity</button>
+<button class="quiz-btn" onclick="check(this, true, 'Correct! &rarr; represents the direction of a vector', 'feedback6')">The direction of a vector</button>
+
+<div id="feedback6" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>7. A car travels at highway speed but slows down as it approaches a red traffic light. Which of the following is true?</p>
+<button class="quiz-btn" onclick="check(this, false, 'If a car is slowing down, motion should not be increasing in the positive direction', 'feedback7')">The acceleration and velocity are increasing in the positive direction</button>
+<button class="quiz-btn" onclick="check(this, false, 'Close! But acceleration is not in the positive direction', 'feedback7')">The acceleration and velocity are decreasing in the positive direction</button>
+<button class="quiz-btn" onclick="check(this, true, 'Exactly! Deceleration happens when acceleration and velocity are in opposite directions', 'feedback7')">The acceleration is negative while velocity is decreasing in the positive direction</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite. The velocity should not be negative if motion is still happening in the positive direction', 'feedback7')">The acceleration is decreasing in the positive direction while the velocity is negative</button>
+
+<div id="feedback7" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>8. What does the reference point and coordinate system tell someone?</p>
+<button class="quiz-btn" onclick="check(this, true, 'Correct! A physicist can choose which direction is positive or negative, though the convention is left=negative and right=positive','feedback8')">The reference point is the intial position of an object while the coordinate system is chosen to define which directions are positive and negative</button>
+<button class="quiz-btn" onclick="check(this, false, 'Actually, velocity and displacement are not directly stated in these concepts', 'feedback8')">The reference point is the initial velocity of an object while the coordinate system represents displacement</button>
+<button class="quiz-btn" onclick="check(this, false, 'Incorrect, initial position can be revealed but only through the reference point', 'feedback8')">The reference point is the acceleration of an object while the coordinate system shows the position</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite. Only the coordinate system reveals the directions of a physics situation', 'feedback8')">Both tell the directions of a physics problem</button>
+
+<div id="feedback8" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>9. </p>
+
+</body>
+</html>
