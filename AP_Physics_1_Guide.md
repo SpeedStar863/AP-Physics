@@ -1,4 +1,5 @@
 
+
 Welcome! I am delighted to be your mentor through one of the hardest classes you will take in high school, but by the end of your experience, these tricky concepts will transform into basic logic. College Board has notoriously made this course one of its most challenging, but after you give me a little bit of your time and attention each day, I guarantee that you will get something out of this. It is my passion to help students feel less pressure in the classroom, so I made this guide as beginner-friendly as possible. Let's start with Unit 1: Kinematics.
 
 ## KINEMATICS: Lesson 1
@@ -63,13 +64,43 @@ Next, I want you to think of the term scalar, how can we transform a vector quan
 * Vectors can be positive or negative values
 * Basic scalar quantities are positive
 * The point of reference (reference point) is usually set to 0 and represents the **initial position** of an object
-* The conventional coordinate system follows a left/down=negative and right/up=positive pathway
+* The conventional coordinate system follows a left/down = negative and right/up = positive pathway
 * Make sure you can visualize every physics problem!
+
+#### Think Like a Physicist
+
+This section will be present in each lesson and is used to cover conceptual physics. Of course, the material above is essential to a full understanding of the situation below:
+
+**A truck hits its brakes too late and stops past an intersection onto the crosswalk. The vehicle backs up at constant acceleration until it comes to a full stop behind the pedestrian walkway. Describe the magnitude of acceleration and velocity.**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+The magnitude of acceleration is not changing since it is constant in this scenario, but the magnitude of velocity is increasing steadily due to constant acceleration and a gradual gain of speed. Even though the direction of velocity and acceleration is negative, the magnitude must stay positive and reflect only the quantity of a vector without reference to direction, which can be referred to as the scalar portion. An easy way to find the magnitude of any vector value is to take its absolute value.
+
+</details>
 
 #### Practice
 
 [Let's test your knowledge, take the vector & scalar quiz here](Quiz.html)
 
 
-## Lesson 2:
+## Lesson 2
 
+Now that we have a basic understanding of kinematics concepts, we can start learning the numbers aspect of the unit. Let's get familiar with a few equations while visualizing each variable at play. But remember to focus more on understanding physics conceptually, not mathematically.
+
+### Kinematic Equations
+
+$$v_f = v_i + at$$
+
+$$\Delta x = v_i t + \frac{1}{2} a t^2$$
+
+$$v_f^2 = v_i^2 + 2a\Delta x$$
+
+$$\Delta x = \frac{1}{2}(v_i + v_f)t$$
+
+***Note that f represents final and i represents initial, also note that t means time***
+
+Keep the above equations in mind and use them only when acceleration is constant, each one is missing a variable to help you better identify which is best for a certain physics problem. These are central to kinematics, so ensure your algebra is up-to-par.
+
+### Specific Variables
