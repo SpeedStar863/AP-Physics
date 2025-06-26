@@ -28,16 +28,16 @@ Before we start, let's learn a few essential key points and definitions. Kinemat
 ### Symbols
 
 #### Velocity
-$\vec{v}$
+$$\vec{v}$$
 
 #### Acceleration
-$\vec{a}$
+$$\vec{a}$$
 
 #### Position
-$\vec{x}$
+$$\vec{x}$$
 
 #### Displacement
-$\Delta\vec{x}$
+$$\Delta\vec{x}$$
 
 
 Now, I want you to look carefully at these symbols and try to identify which are vector quantities and which are scalar quantities.
@@ -104,3 +104,13 @@ $$\Delta x = \frac{1}{2}(v_i + v_f)t$$
 Keep the above equations in mind and use them only when acceleration is constant, each one is missing a variable to help you better identify which is best for a certain physics problem. These are central to kinematics, so ensure your algebra is up-to-par.
 
 ### Specific Variables
+
+* $\vec{v}_inst$ ---> (represents the instantaneous velocity of a motion graph at a single point in time, found by calculating the slope of a straight, linear line)
+
+* $\vec{v}_avg$ = $\Delta x / \Delta t$ ---> (represents the average velocity of a motion graph over the whole time period)
+
+* $\Delta v = v_f - v_i$ ---> (represents the change of velocity over a chosen time interval on a motion graph)
+
+### Algebra in Physics
+
+Intro...
