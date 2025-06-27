@@ -71,7 +71,7 @@ Next, I want you to think of the term scalar, how can we transform a vector quan
 
 This section will be present in each lesson and is used to cover conceptual physics. Of course, the material above is essential to a full understanding of the situation below:
 
-**A truck hits its brakes too late and stops past an intersection onto the crosswalk. The vehicle backs up at constant acceleration until it comes to a full stop behind the pedestrian walkway. Describe the magnitude of acceleration and velocity.**
+**A truck hits its brakes too late and stops past an intersection onto the crosswalk. The vehicle then backs up at constant acceleration until it comes to a full stop behind the pedestrian walkway. Describe the magnitude of acceleration and velocity.**
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
