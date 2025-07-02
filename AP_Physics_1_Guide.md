@@ -2,7 +2,9 @@
 
 Welcome! I am delighted to be your mentor through one of the hardest classes you will take in high school, but by the end of your experience, these tricky concepts will transform into basic logic. College Board has notoriously made this course one of its most challenging, but after you give me a little bit of your time and attention each day, I guarantee that you will get something out of this. It is my passion to help students feel less pressure in the classroom, so I made this guide as beginner-friendly as possible. Let's start with Unit 1: Kinematics.
 
-## KINEMATICS: Lesson 1
+# UNIT 1: KINEMATICS 
+
+## Lesson 1
 
 Before we start, let's learn a few essential key points and definitions. Kinematics combines algebra and geometry to analyze motion in objects but ignores the effects of forces, which will play a role in an object's motion as the course develops.
 
@@ -28,16 +30,16 @@ Before we start, let's learn a few essential key points and definitions. Kinemat
 ### Symbols
 
 #### Velocity
-$$\vec{v}$$
+$\vec{v}$
 
 #### Acceleration
-$$\vec{a}$$
+$\vec{a}$
 
 #### Position
-$$\vec{x}$$
+$\vec{x}$
 
 #### Displacement
-$$\Delta\vec{x}$$
+$\Delta\vec{x}$
 
 
 Now, I want you to look carefully at these symbols and try to identify which are vector quantities and which are scalar quantities.
@@ -51,7 +53,7 @@ Actually, they are all vector quantities! If we scroll above, we will see that s
 
 Next, I want you to think of the term scalar, how can we transform a vector quantity into a scalar quantity? Remember its definition and key points, a scalar value only represents a vector's magnitude. In other words, we can remove the arrow from each vector quantity to create a scalar quantity. For example, $v$ no longer represents velocity, it now represents speed which is the magnitude of velocity, all because the arrow was removed. Not every scalar quantity of a vector has a name, however, so we can just say magnitude of acceleration to prove our point.
 
-#### Key Takeaways
+### Key Takeaways
 
 * Magnitude is always positive
 * Scalar and vector quantities are closely related, but different in definition
@@ -59,7 +61,7 @@ Next, I want you to think of the term scalar, how can we transform a vector quan
 * Variable represents magnitude
 * $\Delta$ represents change over time
 
-#### Further Information
+### Further Information
 
 * Vectors can be positive or negative values
 * Basic scalar quantities are positive
@@ -67,7 +69,7 @@ Next, I want you to think of the term scalar, how can we transform a vector quan
 * The conventional coordinate system follows a left/down = negative and right/up = positive pathway
 * Make sure you can visualize every physics problem!
 
-#### Think Like a Physicist
+### Think Like a Physicist
 
 This section will be present in each lesson and is used to cover conceptual physics. Of course, the material above is essential to a full understanding of the situation below:
 
@@ -76,11 +78,11 @@ This section will be present in each lesson and is used to cover conceptual phys
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-The magnitude of acceleration is not changing since it is constant in this scenario, but the magnitude of velocity (speed) is increasing steadily due to constant acceleration and a gradual gain of speed. Even though the direction of velocity and acceleration is negative, the magnitude must stay positive and reflect only the quantity of a vector without reference to direction, which can be referred to as the scalar portion. An easy way to find the magnitude of any vector value is to take its absolute value.
+**The magnitude of acceleration is not changing since it is constant in this scenario, but the magnitude of velocity (speed) is increasing steadily due to constant acceleration and a gradual gain of speed.** Even though the direction of velocity and acceleration is negative, the magnitude must stay positive and reflect only the quantity of a vector without reference to direction, which can be referred to as the scalar portion. An easy way to find the magnitude of any vector value is to take its absolute value.
 
 </details>
 
-#### Practice
+### Practice
 
 [Let's test your knowledge, take the vector & scalar quiz here](Quiz.html)
 
@@ -115,7 +117,7 @@ Keep the above equations in mind and use them only when acceleration is constant
 
 ### Algebra in Physics
 
-Algebra is central to AP Physics 1, but it is not the only factor when dealing with numbers in the course. Most problems you will encounter are not plug-n-chug style but rather require a more intuitive, conceptual understanding of each variable's role in physics scenarios. Let's look at a few examples to solidify conceptual and algebraic comprehension.
+Algebra is central to AP Physics 1, but it is not the only factor when dealing with numbers in the course. Most problems you will encounter are not plug-n-chug style but rather require a more intuitive, conceptual understanding of each variable's role in physics scenarios. Let's learn a few diagrams and graphs to solidify conceptual and algebraic comprehension.
 
 ![Motion Diagram #1](images/motion_diagram_1.png)
 
@@ -155,13 +157,15 @@ With limited information, I want you to describe the direction and speed of the 
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-Remember that speed only deals with magnitude, meaning it will be positive regardless of direction. The speed of the object is increasing because each dot is spacing out more and more, or in other words the position is increasing after each interval, which is four seconds between every dot. The object is becoming more negative, which means vectors like velocity and acceleration will be negative values. Now that we have determined the direction to be negative, we can look at the magnitude of acceleration. The change of position, or displacement, is doubling each time which makes velocity (the rate of change of position, or displacement) increase. Since velocity is not increasing by the same value each time but instead increasing exponentially (2 times each interval) then that makes acceleration an increasing value not a constant one. Note that acceleration is getting more negative, it is not increasing in the positive direction.
+Remember that speed only deals with magnitude, meaning it will be positive regardless of direction. **The speed of the object is increasing because each dot is spacing out more and more, or in other words the position is increasing after each interval, which is four seconds between every dot.** The object is becoming more negative, which means vectors like velocity and acceleration will be negative values. **Now that we have determined the direction to be negative,** we can look at the magnitude of acceleration. The change of position, or displacement, is doubling each time which makes velocity (the rate of change of position, or displacement) increase. **Since velocity is not increasing by the same value each time but instead increasing exponentially (2 times each interval) then that makes acceleration an increasing value not a constant one.** Note that acceleration is getting more negative, it is not increasing in the positive direction.
 
 </details>
 
+### Position vs. Time
+
 ![Position vs. Time Graph #1](images/position_vs_time.png)
 
-The graph above represents position vs. time. These are effective at describing three variables. Can you figure out the third one? It's velocity! Specifically, the slope of the graph is, so this graph shows more than at first glance. One can find the instantaneous and average velocity just from this graph. Instantaneous velocity is found by drawing a tangent line at the point of interest and calculating the slope of it. Average velocity is found only along a certain time interval from one point to another, which can be from start to finish or from two particular points of interest. Try to find the average velocity from t = 0s to t = 4s. We will discuss instantaneous velocity in a moment.
+The graph above represents position vs. time. These are effective at describing three variables. Can you figure out the third one? It's velocity! Specifically, the slope of the graph is, so this graph shows more than at first glance. One can find the instantaneous and average velocity just from this graph. Instantaneous velocity is found by drawing a tangent line at the point of interest and calculating the slope of it. Average velocity is found only along a certain time interval from one point to another, which can be from start to finish or from two particular points of interest. **Try to find the average velocity from t = 0s to t = 4s.** We will discuss instantaneous velocity in a moment.
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
@@ -170,4 +174,107 @@ The average velocity from t = 0s to t = 4s is 5 m/s. If we calculate the average
 
 </details>
 
-Now we can focus on instantaneous velocity. 
+Now let's focus on instantaneous velocity. Remember that we can calculate this type of velocity by finding a straight, linear segment of a graph. Without calculus, this method is the only way to find instantaneous velocity. In our case, the whole graph is linear, meaning the instantaneous velocity will be the same throughout. If a graph is curved without any linear segments, instantaneous velocity cannot be calculated algebraically. So, my advice: always look for the linear part of the graph when you’re asked about instantaneous velocity. It makes the job way easier!
+
+### Acceleration Deep-Dive
+
+Let's take a closer look at acceleration to conceptually understand its components. Of course, we cannot do that without referencing velocity. So, we will be taking analyzing both at a high level. Acceleration is fundamental to physics and will be held at a greater importance from here on out compared to earlier lessons and instruction. Without further ado, let's get that interpretation crisp!
+
+#### Components
+
+Obviously the structure of acceleration is dependent on velocity, but have you ever thought about their relationship? I mean, deceleration doesn't just involve acceleration, velocity plays a crucial role as well! Check out the four variations of acceleration and velocity below:
+
+
+![Acceleration #1](images/acceleration_1.png)
+![Acceleration #2](images/acceleration_2.png)
+![Acceleration #3](images/acceleration_3.png)
+![Acceleration #4](images/acceleration_4.png)
+
+#### Analysis
+
+Analyze and describe each set in regards to acceleration and velocity. What is the direction and state of motion for each set above?
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+The first set describes acceleration and velocity in different directions, indicating **deceleration.** But, motion is slowing down in the **negative direction** since velocity is negative (moving in negative direction) and acceleration is positive (stopping motion in negative direction). The second set describes acceleration and velocity in different directions, indicating **deceleration.** But, motion is slowing down in the **positive direction** since velocity is positive (moving in positive direction) and acceleration is negative (stopping in positive direction). The third set describes acceleration and velocity in the same direction, indicating **speeding up.** But, motion is speeding up in the **positive direction** since velocity is positive (moving in positive direction) and acceleration is positive (speeding up in positive direction). The fourth set describes acceleration and velocity in the same directions, indicating **speeding up.** But, motion is speeding up in the **negative direction** since velocity is negative (moving in negative direction) and acceleration is negative (speeding up in negative direction).
+
+</details>
+
+### Velocity vs. Time
+
+#### Curved Velocity vs. Time Graph
+
+![Velocity vs. Time Graph #1](images/velocity_vs_time.png)
+
+The image above represents velocity vs. time. This type of graph, in physics, describes velocity and time but incorporates acceleration for the slope. Instantaneous and average acceleration can be found by modifying the slope. For example, the instantaneous acceleration is found by drawing a tangent line on a point of interest while the average acceleration is found by drawing a secant line across a time interval. Remember displacement? Turns out, $\Delta x$ is represented by the area under the line of a velocity vs. time graph. However, we cannot find the displacement of a parabola without calculus, same with instantaneous acceleration. Curved graphs are best at representing motion, not numbers. **From the image above, at which times are acceleration and velocity zero?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**Acceleration is zero at 2s (for questions like these, always round to the nearest whole number) and velocity is zero at 0s and 5s.** Whenever a line is flat, the slope is zero because there is no rise over run. Since acceleration is the slope for this graph and the time 2s describes a flat line, we can confirm that acceleration is 0 here. Note that even though the line is curved and without a traditional slope, a flat section will always indicate a slope value of 0. Velocity is positioned a the y-axis, so whenever the parabola intersects the x-axis, those are the times at which velocity is zero. In this graph, those times are 0s and 6s.
+
+</details>
+
+#### Additional Information
+
+Without calculus, you can actually find the average acceleration of a curved graph. This quantity involves two points. For brevity's sake, let's calculate the average acceleration of the whole graph, from t = 0 to t = 8. Once you have it, check your work below:
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is $\frac{-3}{4}$.** Just use the slope formula: $\frac{y_2 - y_1}{x_2 - x_1}$, and you will be all set! $\frac{-6-0}{8-0}$ = $\frac{-6}{8}$ = $\frac{-3}{4}$.
+
+</details>
+
+#### Linear Velocity vs. Time Graph
+
+Let's solidify your understanding of velocity vs. time graphs with a linear line this time instead of a curved one:
+
+![Velocity vs. Time Graph #2](images/velocity_vs_time_2.png)
+
+With this, we can calculate an accurate slope, instantaneous acceleration, and displacement. To start off, **what is the slope of this line?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**You should have gotten $2 m/s^2$,** also remember and note that acceleration involves seconds to the 2nd power. Velocity is m/s and acceleration is the rate of change of velocity, so we would square the seconds to show that change and accurately represent acceleration.
+
+</details>
+
+#### Instantaneous Acceleration
+
+**What is the instantaneous acceleration at 2s?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+Since the line is linear throughout this graph, **the instantaneous acceleration will remain constant at $2 m/s^2$.** But keep in mind that not all graphs have to incorporate such a simple concept, lines can be curved at some points, and flat or straight at others.
+
+</details>
+
+#### Displacement
+
+We know displacement is calculated as the area under a line. Finding the displacement will involve different area formulas for respective shapes. For example, there may be two shapes under a certain line, so you will have to use correct area formulae and add both values together. Knowing how and when to split an area under a line into two or more shapes will be essential to understanding displacement. Let's practice by using the graph above. **What is the displacement of the graph from t = 5s to t = 7s?** Hint: break the area down into smaller shapes.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The displacement is 24 meters.** Hopefully you broke the area into smaller shapes to make the process easier. From velocity = 0 m/s to 10 m/s, you can find the area of a rectangle, from t = 5s to t = 7s of course. Along the same x-axis section, you can find the area of a triangle from velocity = 10 m/s to 14 m/s (roughly). The formula for rectangular area is $bh$ while the formula for triangular area is $\frac{1}{2}bh$. The rectangular equation is $2 \times 10 = 20$ meters. The triangular equation is $\frac {2 \times 4}{2} = \frac{8}{2} = 4$ meters. Now, we will add 20 and 4 to get our final answer of 24 meters. Keep in mind the correct formulae and their role in certain situations.
+
+</details>
+
+### Acceleration vs. Time
+
+
+
+### Think Like a Physicist
+
+
+
+### Practice
+
+[Let's test your knowledge, take the motion graph quiz here](Quiz2.html)
+
+## Lesson 3
+
