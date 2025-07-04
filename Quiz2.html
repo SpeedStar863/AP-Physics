@@ -1,0 +1,42 @@
+<html><head><style>
+.quiz-btn {
+  background-color: #f0f0f0;
+  border: 2px solid #0074D9;
+  color: #0074D9;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.quiz-btn:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+</style>
+
+<script>
+function check(btn, correct, message, feedbackId) {
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  const feedback = document.getElementById(feedbackId);
+  feedback.innerHTML = message; // Use innerHTML for MathJax
+  if (window.MathJax) {
+    MathJax.typesetPromise([feedback]);
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head>
+
+<body>
+
+<h1>Practice Quiz #2</h1>
+
+<p>1. </p>
+
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback')"></button>
+
+<div id="feedback" style="margin-top:10px; font-weight:bold;"></div>
+
+</body>
+</html>

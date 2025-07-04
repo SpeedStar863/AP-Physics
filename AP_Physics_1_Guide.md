@@ -23,7 +23,7 @@ Before we start, let's learn a few essential key points and definitions. Kinemat
 #### Vector - a physical quantity that has magnitude AND direction
 
 * Velocity - the rate of change of position
-* Acceleration - the rate of change of velocity
+* Acceleration - the rate of change in velocity
 * Position - the location of an object in a 1d or 2d shape
 * Displacement - the change of position over time
 
@@ -111,13 +111,13 @@ Keep the above equations in mind and use them only when acceleration is constant
 
 * $\vec{v}_avg$ = $\Delta x / \Delta t$ ---> (represents the average velocity of a motion graph over the whole time period)
 
-* $\Delta v = v_f - v_i$ ---> (represents the change of velocity over a chosen time interval on a motion graph)
+* $\Delta v = v_f - v_i$ ---> (represents the change in velocity over a chosen time interval on a motion graph)
 
 * $a = \frac{\Delta v (v_f - v_i)}{\Delta t}$ ---> (represents acceleration or the rate of change in velocity)
 
 ### Algebra in Physics
 
-Algebra is central to AP Physics 1, but it is not the only factor when dealing with numbers in the course. Most problems you will encounter are not plug-n-chug style but rather require a more intuitive, conceptual understanding of each variable's role in physics scenarios. Let's learn a few diagrams and graphs to solidify conceptual and algebraic comprehension.
+Algebra is central to AP Physics 1, but it is not the only factor when dealing with numbers in the course. Most problems you will encounter are not in plug-n-chug style but rather require a more intuitive, conceptual understanding of each variable's role in physics scenarios. Let's learn a few diagrams and graphs to solidify conceptual and algebraic comprehension.
 
 ![Motion Diagram #1](images/motion_diagram_1.png)
 
@@ -142,7 +142,7 @@ D. $\frac{1}{4}$ as much
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-Correct answer: A.
+**Correct answer: A.**
 
 Since the constant velocity will be the same amount each time (2.5 m/s), we can compare any of its intervals to the initial velocity of 5 m/s, remember that we get these values because velocity is defined as the rate of change of position (displacement) per second. 5 is two times the amount of 2.5, so that makes A the correct answer.
 
@@ -152,7 +152,7 @@ Let's take a look at simpler models called oil-drop or particle diagrams. Since 
 
 ![Particle Diagram #1](images/particle_diagram_1.png)
 
-With limited information, I want you to describe the direction and speed of the object. For more advanced students, try and interpret out the acceleration too. Hint: the model is very similar to a motion diagram. Once you have it figured out, check your answers below:
+With limited information, I want you to describe the direction and speed of the object. For more advanced students, try to interpret the acceleration too. Once you have it figured out, check your answers below. Hint: the model is very similar to a motion diagram.
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
@@ -165,12 +165,12 @@ Remember that speed only deals with magnitude, meaning it will be positive regar
 
 ![Position vs. Time Graph #1](images/position_vs_time.png)
 
-The graph above represents position vs. time. These are effective at describing three variables. Can you figure out the third one? It's velocity! Specifically, the slope of the graph is, so this graph shows more than at first glance. One can find the instantaneous and average velocity just from this graph. Instantaneous velocity is found by drawing a tangent line at the point of interest and calculating the slope of it. Average velocity is found only along a certain time interval from one point to another, which can be from start to finish or from two particular points of interest. **Try to find the average velocity from t = 0s to t = 4s.** We will discuss instantaneous velocity in a moment.
+The graph above represents position vs. time. These are effective at describing three variables. Can you figure out the third one? It's velocity! Specifically, the slope of the graph is, so this graph shows more than at first glance. One can find the instantaneous and average velocity just from this graph. Instantaneous velocity is found by drawing a tangent line at the point of interest and calculating the slope of it. Average velocity is found only along a certain time interval from one point to another, which can be from start to finish or from two particular points of interest. **Try to find the average velocity from 0s to 4s.** We will discuss instantaneous velocity in a moment.
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-The average velocity from t = 0s to t = 4s is 5 m/s. If we calculate the average velocity from t = 0s to t = 10s, we will get the same value. This is because the line is linear, or from a physics standpoint, the velocity is constant. The slope will be the same from any time interval. Since velocity is constant, acceleration will come out to zero (no acceleration present).
+**The average velocity from 0s to 4s is 5 m/s.** If we calculate the average velocity from t = 0s to t = 10s, we will get the same value. This is because the line is linear, or from a physics standpoint, the velocity is constant. The slope will be the same from any time interval. Since velocity is constant, acceleration will come out to zero (no acceleration present).
 
 </details>
 
@@ -197,7 +197,13 @@ Analyze and describe each set in regards to acceleration and velocity. What is t
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-The first set describes acceleration and velocity in different directions, indicating **deceleration.** But, motion is slowing down in the **negative direction** since velocity is negative (moving in negative direction) and acceleration is positive (stopping motion in negative direction). The second set describes acceleration and velocity in different directions, indicating **deceleration.** But, motion is slowing down in the **positive direction** since velocity is positive (moving in positive direction) and acceleration is negative (stopping in positive direction). The third set describes acceleration and velocity in the same direction, indicating **speeding up.** But, motion is speeding up in the **positive direction** since velocity is positive (moving in positive direction) and acceleration is positive (speeding up in positive direction). The fourth set describes acceleration and velocity in the same directions, indicating **speeding up.** But, motion is speeding up in the **negative direction** since velocity is negative (moving in negative direction) and acceleration is negative (speeding up in negative direction).
+1. The first set describes acceleration and velocity in different directions, indicating **deceleration.** But, motion is slowing down in the **negative direction** since velocity is negative (moving in negative direction) and acceleration is positive (stopping motion in negative direction). 
+
+2. The second set describes acceleration and velocity in different directions, indicating **deceleration.** But, motion is slowing down in the **positive direction** since velocity is positive (moving in positive direction) and acceleration is negative (stopping in positive direction). 
+
+3. The third set describes acceleration and velocity in the same direction, indicating **speeding up.** But, motion is speeding up in the **positive direction** since velocity is positive (moving in positive direction) and acceleration is positive (speeding up in positive direction). 
+
+4. The fourth set describes acceleration and velocity in the same directions, indicating **speeding up.** But, motion is speeding up in the **negative direction** since velocity is negative (moving in negative direction) and acceleration is negative (speeding up in negative direction).
 
 </details>
 
@@ -218,7 +224,7 @@ The image above represents velocity vs. time. This type of graph, in physics, de
 
 #### Additional Information
 
-Without calculus, you can actually find the average acceleration of a curved graph. This quantity involves two points. For brevity's sake, let's calculate the average acceleration of the whole graph, from t = 0 to t = 8. Once you have it, check your work below:
+Without calculus, you can actually find the average acceleration of a curved graph. This quantity involves two points. For brevity's sake, let's calculate the average acceleration of the whole graph, from 0s to 8s. Once you have it, check your work below:
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
@@ -238,39 +244,90 @@ With this, we can calculate an accurate slope, instantaneous acceleration, and d
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-**You should have gotten $2 m/s^2$,** also remember and note that acceleration involves seconds to the 2nd power. Velocity is m/s and acceleration is the rate of change of velocity, so we would square the seconds to show that change and accurately represent acceleration.
+**You should have gotten $2 m/s^2$,** also remember and note that acceleration involves seconds to the 2nd power. The slope of a velocity vs. time graph represents average acceleration. Velocity is m/s and acceleration is the rate of change in velocity, so we would square the seconds to show that change and accurately represent acceleration.
 
 </details>
 
 #### Instantaneous Acceleration
 
-**What is the instantaneous acceleration at 2s?**
+What is the instantaneous acceleration at 2s?
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-Since the line is linear throughout this graph, **the instantaneous acceleration will remain constant at $2 m/s^2$.** But keep in mind that not all graphs have to incorporate such a simple concept, lines can be curved at some points, and flat or straight at others.
+Since the line is linear throughout this graph, **the instantaneous acceleration remains constant at $2 m/s^2$.** However, not all graphs are this simple — some may have curved, flat, or straight segments.
 
 </details>
 
 #### Displacement
 
-We know displacement is calculated as the area under a line. Finding the displacement will involve different area formulas for respective shapes. For example, there may be two shapes under a certain line, so you will have to use correct area formulae and add both values together. Knowing how and when to split an area under a line into two or more shapes will be essential to understanding displacement. Let's practice by using the graph above. **What is the displacement of the graph from t = 5s to t = 7s?** Hint: break the area down into smaller shapes.
+Displacement is calculated as the area under the line. To find displacement, you may need to use different area formulas for different shapes. For example, if there are two shapes under the line, use the correct formula for each and add the results together. Knowing how and when to split the area into multiple shapes is essential for understanding displacement. **What is the displacement from t = 5s to t = 7s?**
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-**The displacement is 24 meters.** Hopefully you broke the area into smaller shapes to make the process easier. From velocity = 0 m/s to 10 m/s, you can find the area of a rectangle, from t = 5s to t = 7s of course. Along the same x-axis section, you can find the area of a triangle from velocity = 10 m/s to 14 m/s (roughly). The formula for rectangular area is $bh$ while the formula for triangular area is $\frac{1}{2}bh$. The rectangular equation is $2 \times 10 = 20$ meters. The triangular equation is $\frac {2 \times 4}{2} = \frac{8}{2} = 4$ meters. Now, we will add 20 and 4 to get our final answer of 24 meters. Keep in mind the correct formulae and their role in certain situations.
-
+**The displacement is 24 meters.** Hopefully, you broke the area into smaller shapes to make the process easier. From t = 5s to t = 7s, the area from velocity 0 m/s to 10 m/s forms a rectangle equal to 20 meters. In the same interval, the area from 10 m/s to 14 m/s forms a triangle equal to 4 meters. Formulae are important!
 </details>
+
+#### Important Note
+
+Since we are reading from a velocity vs. time graph, instantaneous velocity can be read directly from the data in regards to a certain time (i.e. 20 m/s at 10s). Average velocity can also be calculated but only when adhering to this formula: $\frac{\Delta x}{\Delta t}$. In other words, the displacement divided by the time interval (which can cover the whole graph or a particular portion). For example, the average velocity from 5s to 7s is 12 m/s since our displacement is 24 meters, we divide that by our time interval of 2s, so $\frac{24m}{2s} = 12 m/s$.
 
 ### Acceleration vs. Time
 
+![Acceleration vs. Time Graph #1](images/acceleration_vs_time.png)
 
+The image above is an acceleration vs. time graph. Like the others, this graph provides data on two variables: acceleration ($a$) and time ($t$). However, the slope and area under the line represent different quantities. The slope gives the average jerk (the rate of change of acceleration), while the area under the line gives the change in velocity ($\Delta v$). With a few calculations, you can also find instantaneous jerk from this graph. There is more information in this image than you might expect — let’s master acceleration vs. time graphs!
+
+#### Slope
+
+What is the slope, average jerk, of this line?
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**You should have gotten $-1 m/s^3$.** The process would look like $\frac{-5-3 m/s^2}{8-0 s} = \frac{-8 m/s^2}{8 s} = -1 m/s^3$.
+
+</details>
+
+#### Change in Velocity
+
+What is the change in velocity from t = 0 to t = 8?
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is -31 m/s.** We can break this whole graph into a positive triangle, negative triangle, negative square, and one small, negative rectangle to find the answer. The positive triangle: $\frac{1}{2} \times 3 \times 3 = 4.5$. The negative triangle: $\frac{1}{2} \times 5 \times -5 = -12.5$. The negative square: $3 \times -6 = -18$. The small, negative negative rectangle: $5 \times -1 = -5$. Now we add the values together: $4.5 - 12.5 - 18 - 5 = -31 m/s$.
+
+</details>
+
+#### Instantaneous Jerk
+
+What is the instantaneous jerk at 4s?
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is also $-1 m/s^3$.** Linear segments imply an equal slope throughout. However, this graph is completely linear, meaning the slope of any time interval is the same as that of the whole graph or another time interval. Notice a pattern? Good.
+
+</details>
+
+#### Important Note
+
+Lastly, let's ensure that you have an understanding of instantaneous and average acceleration. Since $a$ is represented by the y-axis, instantaneous acceleration can be read directly from the data in regards to a certain time (i.e. $-2 m/s^2$ at $5s$). Average acceleration can be found via this formula: $\frac{\Delta v}{\Delta t}$. Let's find the average acceleration from 4s to 8s (note that our change of time - denominator - is 4 seconds). The change in velocity (numerator) is represented by the area under a line. Looking at this graph, we can break the area into a triangle and a small rectangle below it. The triangle: $\frac{1}{2} \times 4 \times -4 = -8 m/s$. The small rectangle: $4 \times -1 = -4$. Add them up: $-8 - 4 = -12 m/s$. **Now, $\frac{-12 m/s}{4s} = -3 m/s^2$.**
 
 ### Think Like a Physicist
 
+A coast guard helicopter takes off from base on route to assist a ship with technical issues. The aircraft takes two minutes, or 120 seconds, to get there and accelerates at a constant rate of $2 m/s^2$. **What is the instantaneous velocity at 40s?** Bonus: what is the average velocity of the whole trip?
 
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is $80 m/s$.** Instantaneous velocity refers to $v$ at a particular instant of time. Since constant acceleration is increasing velocity by $2 m/s$ every second, we can multiply $2 m/s^2$ by $40s$ to get $80 m/s$. Now let's look at our bonus question. **The answer is $120 m/s$.** Average velocity can be found with this formula: $\frac{\Delta x}{\Delta t}$. By using the graph below (which you should've made yourself), we can calculate total displacement to get $14,400 m$ according to our triangular formula of $\frac{1}{2} \times bh$. Now we divide our displacement of $14,400 m$ by $120s$ to get $120 m/s$ as the final answer.
+
+![Velocity vs. Time Graph #3](images/velocity_vs_time_3.png)
+
+</details>
 
 ### Practice
 
