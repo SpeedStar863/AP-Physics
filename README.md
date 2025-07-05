@@ -318,7 +318,16 @@ Lastly, let's ensure that you have an understanding of instantaneous and average
 
 ### Think Like a Physicist
 
-A coast guard helicopter takes off from base on route to assist a ship ridden with technical issues. The aircraft takes two minutes to get there, 
+A coast guard helicopter takes off from base on route to assist a ship with technical issues. The aircraft takes two minutes, or 120 seconds, to get there and accelerates at a constant rate of $2 m/s^2$. **What is the instantaneous velocity at 40s?** Bonus: what is the average velocity of the whole trip?
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is $80 m/s$.** Instantaneous velocity refers to $v$ at a particular instant of time. Since constant acceleration is increasing velocity by $2 m/s$ every second, we can multiply $2 m/s^2$ by $40s$ to get $80 m/s$. Now let's look at our bonus question. **The answer is $120 m/s$.** Average velocity can be found with this formula: $\frac{\Delta x}{\Delta t}$. By using the graph below (which you should've made yourself), we can calculate total displacement to get $14,400 m$ according to our triangular formula of $\frac{1}{2} \times bh$. Now we divide our displacement of $14,400 m$ by $120s$ to get $120 m/s$ as the final answer.
+
+![Velocity vs. Time Graph #3](images/velocity_vs_time_3.png)
+
+</details>
 
 ### Practice
 
