@@ -20,7 +20,7 @@
 function check(btn, correct, message, feedbackId) {
   btn.style.background = correct ? 'lightgreen' : 'salmon';
   const feedback = document.getElementById(feedbackId);
-  feedback.innerHTML = message; // Use innerHTML for MathJax
+  feedback.innerHTML = message;
   if (window.MathJax) {
     MathJax.typesetPromise([feedback]);
   }

@@ -1,0 +1,84 @@
+<html><head><style>
+.quiz-btn {
+  background-color: #f0f0f0;
+  border: 2px solid #0074D9;
+  color: #0074D9;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.quiz-btn:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+</style>
+
+<script>
+let lastClicked = null;
+
+function check(btn, correct, message, feedbackId) {
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  const feedback = document.getElementById(feedbackId);
+
+  if (lastClicked === btn) {
+    feedback.innerHTML = "";
+    lastClicked = null;
+    return;
+  }
+
+  const buttons = document.querySelectorAll('.quiz-btn');
+  buttons.forEach(b => b.style.background = "");
+
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  feedback.innerHTML = message;
+  if (window.MathJax) {
+    MathJax.typesetPromise([feedback]);
+  }
+  lastClicked = btn;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Practice Quiz #2</h1>
+
+<p>1. After a traffic light turned green, a truck zoomed past a car at a speed of 30 m/s while maintaining constant velocity. The car started from rest and picked up a constant acceleration of 5 m/s<sup>2</sup> once it was clear to go. <b>How much time does it take for the car to catch up with the truck? Also, describe the motions on an acceleration vs. time graph.</b></p>
+
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback')">8 seconds. Truck: decreasing linear line from 30 m/s<sup>2</sup>. Car: increasing linear line from origin.</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback')">4 seconds. Truck: increasing linear line from origin. Car: increasing linear line from 5 m/s<sup>2</sup>.</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Since the truck is traveling at constant speed and the car is starting at rest, we can divide 30 m/s by 6 m/s<sup>2</sup> to get 6 seconds. Given constant velocity, the truck has zero acceleration and will be represented by a constant horizontal line at zero. The car maintains constant acceleration at 5 m/s<sup>2</sup>, so it is represented by a constant horizontal line at that value.', 'feedback')">6 seconds. Truck: constant horizontal line from origin. Car: constant horizontal line from 5 m/s<sup>2</sup>.</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback')">2 seconds. Truck: decreasing linear line from origin. Car: decreasing linear line from 5 m/s<sup>2</sup>.</button>
+
+<div id="feedback" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>2. A plane maintains constant acceleration and holds at a velocity of 200 m/s. A nearby fighter jet roars past at an instantaneous velocity of 324 m/s but has a variable acceleration. <b>Which of the following graphs represent the plane and fighter jet's motions?</b></p>
+
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The plane has no acceleration (constant at 0) and a constant velocity of 200 m/s which should be represented by a horizontal line at that value.', 'feedback2')"><img src="images/velocity_vs_time_4.png" alt="Velocity vs. Time Graph (Plane)"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')"><img src="images/velocity_vs_time_6.png" alt="Velocity vs. Time Graph (Plane)"></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The line starts at an initial velocity of 324 m/s. Since the acceleration is variable, the graph should be curved - and in this case exponential - in regards to velocity.', 'feedback2')"><img src="images/velocity_vs_time_5.png" alt="Velocity vs. Time Graph (Fighter Jet)"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')"><img src="images/velocity_vs_time_7.png" alt="Velocity vs. Time Graph (Fighter Jet)"></button>
+
+<div id="feedback2" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>3. A boat wants to reach the Dominican Republic from Miami, Florida in quick time. Its max speed is 25 m/s. The boat departs from a local dock and speeds up to 25 m/s in 5 seconds until it reaches its destination 11 hours later. <b>Which of the following graphs represents the boat's motion?</b></p>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The boat\'s acceleration climbs from 0 to 5 in one second then maintains a constant level of 5 m/s<sup>2</sup> throughout its journey to the Dominican Republic.', 'feedback3')"><img src="images/acceleration_vs_time_2.png" alt="Acceleration vs. Time Graph"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')"><img src="images/acceleration_vs_time_3.png" alt="Acceleration vs. Time Graph (Boat)"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')"><img src="images/acceleration_vs_time_4.png" alt="Acceleration vs. Time Graph (Boat)"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')"><img src="images/acceleration_vs_time_5.png" alt="Acceleration vs. Time Graph (Boat)"></button>
+
+<div id="feedback3" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>4. A stationary marble gets pushed across a small table where it reaches the other side 14 seconds later. <b>Which of the following motion diagrams correctly describes the marble?</b></p>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Direction is assumed right so the x-axis should be positive. The marble is decelerating so velocity will be getting smaller and smaller until motion eventually stops. There are seven centimeter intervals, each representing two seconds and two times seven equals 14 seconds, meaning the time length also checks out.', 'feedback4')"><img src="images/motion_diagram_3.png" alt="Motion Diagram (Marble)" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')"><img src="images/motion_diagram_4.png" alt="Motion Diagram (Marble)" width="600" height="400"></button>
+
+
+<div id="feedback4" style="margin-top:10px; font-weight:bold;"></div>
+
+</body>
+</html>
