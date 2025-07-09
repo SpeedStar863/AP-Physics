@@ -74,11 +74,60 @@ function check(btn, correct, message, feedbackId) {
 <div id="feedback3" style="margin-top:10px; font-weight:bold;"></div>
 
 <p>4. A stationary marble gets pushed across a small table where it reaches the other side 14 seconds later. <b>Which of the following motion diagrams correctly describes the marble?</b></p>
-<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Direction is assumed right so the x-axis should be positive. The marble is decelerating so velocity will be getting smaller and smaller until motion eventually stops. There are seven centimeter intervals, each representing two seconds and two times seven equals 14 seconds, meaning the time length also checks out.', 'feedback4')"><img src="images/motion_diagram_3.png" alt="Motion Diagram (Marble)" width="600" height="400"></button>
 <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')"><img src="images/motion_diagram_4.png" alt="Motion Diagram (Marble)" width="600" height="400"></button>
-
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Direction is assumed right so the x-axis should be positive. The marble is decelerating so velocity will be getting smaller and smaller until motion eventually stops. There are seven centimeter intervals, each representing two seconds and two times seven equals 14 seconds, meaning the time length also checks out.', 'feedback4')"><img src="images/motion_diagram_3.png" alt="Motion Diagram (Marble)" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')"><img src="images/motion_diagram_5.png" alt="Motion Diagram (Marble)" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')"><img src="images/motion_diagram_6.png" alt="Motion Diagram (Marble)" width="600" height="400"></button>
 
 <div id="feedback4" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>5. A local construction crew releases a supply wagon down a ramp where it comes to jarring halt ten seconds later. The ramp is 20 meters long. <b>Which of the following particle diagrams correctly represents the wagon's motion?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')"><img src="images/particle_diagram_3.png" alt="Particle Diagram (Wagon)" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')"><img src="images/particle_diagram_4.png" alt="Particle Diagram (Wagon)" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')"><img src="images/particle_diagram_5.png" alt="Particle Diagram (Wagon)" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Direction should be in the positive direction and distance should max out at 20 meters. Each dot represents position and since the wagon is moving downward, it will be accelerating and gaining velocity. Therefore, the space between each dot will increase upon time intervals until the wagon comes to a jarring halt as shown at 20 meters.', 'feedback5')"><img src="images/particle_diagram_2.png" alt="Particle Diagram (Wagon)" width="600" height="400"></button>
+
+<div id="feedback5" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>6. Which of the following acceleration models represent deceleration?</p>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The arrows are in opposite directions, so deceleration is taking place. However, motion is more specifically slowing down in the negative direction.', 'feedback6')"><img src="images/acceleration_1.png" alt="Acceleration Model" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The arrows are in opposite directions, so deceleration is taking place. However, motion is more specifically slowing down in the positive direction.', 'feedback6')"><img src="images/acceleration_2.png" alt="Acceleration Model" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again. Motion is speeding up in the positive direction.', 'feedback6')"><img src="images/acceleration_3.png" alt="Acceleration Model" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again. Motion is speeding up in the negative direction.', 'feedback6')"><img src="images/acceleration_4.png" alt="Acceleration Model" width="600" height="400"></button>
+
+<div id="feedback6" style="margin-top:10px; font-weight:bold;"></div>
+
+<p> <img src="images/position_vs_time_2.png"> <b>What is the velocity of the train from 30s to 50s?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">2 m/s</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">0 m/s</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Velocity is the slope of a position vs. time graph. So, <sup>0 - 40</sup>&frasl;<sub>50 - 30</sub> = -2 m/s.', 'feedback7')">-2 m/s</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">-4 m/s</button>
+
+<div id="feedback7" style="margin-top:10px; font-weight:bold;"></div>
+
+<p> <img src="images/velocity_vs_time_8.png"> <b>What is the total displacement of the helicopter?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')">300 meters</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The graph can be broken into two triangles and two rectangles. The first triangle: <sup>3 &times; 30</sup>&frasl;<sub>2</sub> = 45 meters. The first rectangle: 3 &times; 30 = 90 meters. The second rectangle: 4 &times; 30 = 120 meters. The second triangle: <sup>4 &times; 40</sup>&frasl;<sub>2</sub> = 80 meters. 45 + 90 + 120 + 80 = 335 meters.', 'feedback8')">335 meters</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')">325 meters</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')">365 meters</button>
+
+<div id="feedback8" style="margin-top:10px; font-weight:bold;"></div>
+
+<p> <img src="images/position_vs_time_3.png"> <b>What is the instantaneous velocity at 7s?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')">-6 m/s</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. A linear segment will have the same slope throughout. In this case we need to find it at 7s. From 6s to 10s, the line is linear and on a downward slope. Meaning instantaneous velocity is the same for the last four seconds of this graph. <sup>-12 - 4</sup>&frasl;<sub>10 - 6</sub> = -4 m/s', 'feedback9')">-4 m/s</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')">-2 m/s</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')">-5 m/s</button>
+
+<div id="feedback9" style="margin-top:10px; font-weight:bold;"></div>
+
+<p> <img src="images/acceleration_vs_time_6.png"> <b>What is the total average acceleration?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10')">8.5 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10')">6.5 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10')">9.5 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Average acceleration divides Δv by Δt. Let\'s find the displacement, or change in velocity, of the graph. We can divide it into two trapezoids and two triangles. First trapezoid: <sup>1 + 3</sup>&frasl;<sub>2</sub> &times; 5 = 10 m/s. Second trapezoid: <sup>8 + 10</sup>&frasl;<sub>2</sub> &times; 5 = 45 m/s. First triangle: <sup>2 &times; 10</sup>&frasl;<sub>2</sub> = 10 m/s. Second triangle: <sup>2 &times; 10</sup>&frasl;<sub>2</sub> = 10 m/s. Now, 10 + 45 + 10 + 10 = 75 m/s. So, <sup>75 m/s</sup>&frasl;<sub>10</sub> = 7.5 m/s<sup>2</sup>.', 'feedback10')">7.5 m/s<sup>2</sup></button>
+
+<div id="feedback10" style="margin-top:10px; font-weight:bold;"></div>
 
 </body>
 </html>
