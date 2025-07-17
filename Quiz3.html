@@ -1,0 +1,131 @@
+<html><head><style>
+.quiz-btn {
+  background-color: #f0f0f0;
+  border: 2px solid #0074D9;
+  color: #0074D9;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.quiz-btn:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+</style>
+
+<script>
+let lastClicked = null;
+
+function check(btn, correct, message, feedbackId) {
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  const feedback = document.getElementById(feedbackId);
+
+  if (lastClicked === btn) {
+    feedback.innerHTML = "";
+    lastClicked = null;
+    return;
+  }
+
+  const buttons = document.querySelectorAll('.quiz-btn');
+  buttons.forEach(b => b.style.background = "");
+
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  feedback.innerHTML = message;
+  if (window.MathJax) {
+    MathJax.typesetPromise([feedback]);
+  }
+  lastClicked = btn;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Practice Quiz #3</h1>
+
+<p> <img src="images/position_vs_time_6.png"><b>Which equation is correctly derived from this graph?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">v<sub>f</sub> = at + v<sub>i</sub></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. We can simply plug in our known values and confirm. If a graph is linear, we should never have any exponents an the exception to the special case below. Anyways, 50 = &frac12; (5 + 5)10. This checks out to 50 = 50.', 'feedback1')">Δx = &frac12;(v<sub>i</sub> + v<sub>f</sub>)t</button>
+<button class="quiz-btn" onclick="check(this, false, 'Close! You can rearrange the equation to fit slope-intercept formula, but its current state is incorrect.', 'feedback1')">Δx = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">v<sub>f</sub><sup>2</sup> = v<sub>i</sub><sup>2</sup> + 2aΔx</button>
+
+<div id="feedback1" style="margin-top:10px; font-weight:bold;"></div>
+
+<p> <img src="images/position_vs_time_7.png"><b>Which value correctly fits the blank?</b></p>
+<button class="quiz-btn" onclick="check(this, true, 'From v<sub>f</sub> = v<sub>i</sub> + at, v = at. So, v = 10 &times; 2 which finals to 20 m/s.', 'feedback2')">20 m/s</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">10 m/s</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">15 m/s</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">25 m/s</button>
+
+<div id="feedback2" style="margin-top:10px; font-weight:bold;"></div>
+
+<p> <img src="images/velocity_vs_position_4.png"><b>What is the simplified equation and linearizing proportion of this graph?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">v = &radic;10x and x &#8776; &radic;v</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">v = &radic;20x and x &#8776; v</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">v = &radic;30x and v &#8776; x<sup>3</sup></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. For the equation, we can find an x-value and solve. &radic;20(40) = &#8776;28.3 m/s✅. Remember, this is a square root graph. So, v = &radic;2ax is from the only square-root kinematic equation v<sub>f</sub><sup>2</sup> = v<sub>i</sub><sup>2</sup> + 2aΔx when set equal to v. Note that we assume acceleration to be 10 m/s<sup>2</sup>. For the proportion, we can pull v &#8733; &radic;x from v = &radic;2ax. Both of which are square root functions.', 'feedback3')">v = &radic;20x and v &#8733; &radic;x</button>
+
+<div id="feedback3" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>4. A retail employee evaluates two shopping carts in regards to speed and time. Shopping cart A travels with uniform acceleration. Shopping cart B has 50% more velocity but 75% less time and uniform acceleration. <b>What is the relationship of velocity between the two vehicles? Initial velocity is 0.</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">v<sub>B</sub> = &frac14;v<sub>A</sub> and 4v<sub>B</sub> = v<sub>A</sub></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use v<sub>f</sub> = v<sub>i</sub> + at. Now, <sup>1.5v<sub>B</sub> = a&frac14;t<sub>B</sub></sup> &frasl; <sub>v<sub>A</sub> = t<sub>A</sub></sub>. Now cancel out acceleration to get <sup>v<sub>B</sub> = &frac16;t<sub>B</sub></sup> &frasl; <sub>v<sub>A</sub> = t<sub>A</sub></sub>. Finally, v<sub>B</sub> = &frac16;V<sub>A</sub> and 6V<sub>B</sub> = v<sub>A</sub>. Or a proportion, we get v &#8733; t. For A, v = t. For B, 1.5v = &frac16; t. Divide B by A to get the same answers.', 'feedback4')">v<sub>B</sub> = &frac16;v<sub>A</sub> and 6v<sub>B</sub> = v<sub>A</sub></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">v<sub>B</sub> = &frac12;v<sub>A</sub> and 2v<sub>B</sub> = v<sub>A</sub></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">v<sub>B</sub> = &frac18;v<sub>A</sub> and 8v<sub>B</sub> = v<sub>A</sub></button>
+
+<div id="feedback4" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>5. Starting from rest, a cheetah runs 2,000 meters in 50 seconds. <b>What is the animal's acceleration? Round to the nearest tenth.</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">2.0 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">1.8 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δx = &frac12;(v<sub>i</sub> + v<sub>f</sub>)t. Now plug in. 2,000 = &frac12;(v)50. 2,000 = 25v. v = 80 m/s. Now choose v<sub>f</sub> = v<sub>i</sub> + at. 80 = 50a. <sup>80</sup> &frasl;<sub>50</sub> = 1.6 m/s<sup>2</sup>.', 'feedback5')">1.6 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">1.4 m/s<sup>2</sup></button>
+
+<div id="feedback5" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>6. A water bottle is rolled on the ground with an initial velocity of 2 m/s. It stops after 1.2 seconds with an acceleration of 4 m/s<sup>2</sup>. <b>What is the water bottle's displacement? Round to the nearest tenth.</b></p>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δx = v<sub>i</sub>t + &frac12; at<sup>2</sup>. Now plug in. Δx = 2(1.2) + 2(1.2)<sup>2</sup>. Δx = 2.4 + 2.88. Finally, Δx = 5.3 meters.', 'feedback6')">5.3 meters</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback6')">5.0 meters</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback6')">5.5 meters</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback6')">5.6 meters</button>
+
+<div id="feedback6" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>7. Starting from rest, a 5 meter-long go-cart drives its length five times over before coming to a stop 10 seconds later. <b>What is the go-cart's acceleration? Round to the nearest tenth.</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">2.0 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δx = v<sub>i</sub>t + &frac12; at<sup>2</sup>. Let\'s plug in our known values. 25 = &frac12; a (10)<sup>2</sup>. So, 25 = 50a. Finally, a = &frac12; m/s<sup>2</sup> or 0.5 m/s<sup>2</sup>.', 'feedback7')">0.5 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">1.5 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">1.0 m/s<sup>2</sup></button>
+
+<div id="feedback7" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>8. A ball is thrown down from a bridge. Data is recorded over 10 seconds. <b>Which of the following graphs represent this?</b></p>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The position vs. time graph shows an increase of position in the negative direction supported by an initial velocity. The line is purely negative, which reflects the situation. The ball is thrown downwards, so there should be no room for a positive value.', 'feedback8')"><img src="images/position_vs_time_8.png"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')"><img src="images/position_vs_time_9.png"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')"><img src="images/velocity_vs_time_13.png"></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Since the ball is thrown, a negative initial velocity is needed. Gravity will increase speed in the negative direction, so the line will continue to decline.', 'feedback8')"><img src="images/velocity_vs_time_14.png"></button>
+
+<div id="feedback8" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>9. A ball is thrown down onto a trampoline and bounces with perfect elasticity. <b>Which of the following velocity and acceleration diagrams represent this?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')"><img src="images/acceleration_and_velocity_4.png" alt="Velocity and Acceleration Diagram" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')"><img src="images/acceleration_and_velocity_5.png" alt="Velocity and Acceleration Diagram" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')"><img src="images/acceleration_and_velocity_3.png" alt="Velocity and Acceleration Diagram" width="600" height="400"></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Given perfect elasticity, the ball should have the same velocity and acceleration after its bounce. A downwards throw will create a high initial velocity and a decline until the impact. After, velocity will increase past the bounce then slowly decrease.', 'feedback9')"><img src="images/acceleration_and_velocity_2.png" alt="Velocity and Acceleration Diagram" width="600" height="400"></button>
+
+<div id="feedback9" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>10. A boat is released into the ocean. After about 375.7 meters and 62.3 seconds later, it stalled and faced mechanical issues. <b>What was the ship's acceleration before requiring attention? Round to the nearest tenth.</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10')">0.1 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10')">0.3 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δx = v<sub>i</sub>t + &frac12; at<sup>2</sup>. Now plug in, 375.7 = &frac12; a (62.3)<sup>2</sup>. Then, 375.7 = &frac12; 3881.3a. So, 375.7 = 1940.7a. Finally, a = 0.2 m/s<sup>2</sup>.', 'feedback10')">0.2 m/s<sup>2</sup></button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10')">0.4 m/s<sup>2</sup></button>
+
+<div id="feedback10" style="margin-top:10px; font-weight:bold;"></div>
+
+</body>
+</html>

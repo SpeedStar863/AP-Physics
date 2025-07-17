@@ -2,7 +2,7 @@
 
 Welcome! I am delighted to be your mentor through one of the hardest classes you will take in high school, but by the end of your experience, these tricky concepts will transform into basic logic. College Board has notoriously made this course one of its most challenging, but after you give me a little bit of your time and attention each day, I guarantee that you will get something out of this. It is my passion to help students feel less pressure in the classroom, so I made this guide as beginner-friendly as possible. Let's start with Unit 1: Kinematics.
 
-# UNIT 1: KINEMATICS 
+# Unit 1: Kinematics 
 
 ## Lesson 1
 
@@ -90,20 +90,6 @@ This section will be present in each lesson and is used to cover conceptual phys
 ## Lesson 2
 
 Now that we have a basic understanding of kinematics concepts, we can start learning the numbers aspect of the unit. Let's get familiar with a few equations while visualizing each variable at play. But remember to focus more on understanding physics conceptually, not mathematically.
-
-### Kinematic Equations
-
-$$v_f = v_i + at$$
-
-$$\Delta x = v_i t + \frac{1}{2} a t^2$$
-
-$$v_f^2 = v_i^2 + 2a\Delta x$$
-
-$$\Delta x = \frac{1}{2}(v_i + v_f)t$$
-
-***Note that f represents final and i represents initial, also note that t means time***
-
-Keep the above equations in mind and use them only when acceleration is constant, each one is missing a variable to help you better identify which is best for a certain physics problem. These are central to kinematics, so ensure your algebra is up-to-par.
 
 ### Specific Variables
 
@@ -334,4 +320,18 @@ A coast guard helicopter takes off from base on route to assist a ship with tech
 [Let's test your knowledge, take the motion graph quiz here](Quiz2.html)
 
 ## Lesson 3
+
+### Kinematic Equations
+
+$$v_f = v_i + at$$
+
+$$\Delta x = v_i t + \frac{1}{2} a t^2$$
+
+$$v_f^2 = v_i^2 + 2a\Delta x$$
+
+$$\Delta x = \frac{1}{2}(v_i + v_f)t$$
+
+***Note that f represents final and i represents initial, also note that t means time***
+
+Keep the above equations in mind and use them only when acceleration is constant, each one is missing a variable to help you better identify which is best for a certain physics problem. These are central to kinematics, so ensure your algebra is up-to-par.
 

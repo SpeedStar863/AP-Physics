@@ -2,7 +2,7 @@
 
 Welcome! I am delighted to be your mentor through one of the hardest classes you will take in high school, but by the end of your experience, these tricky concepts will transform into basic logic. College Board has notoriously made this course one of its most challenging, but after you give me a little bit of your time and attention each day, I guarantee that you will get something out of this. It is my passion to help students feel less pressure in the classroom, so I made this guide as beginner-friendly as possible. Let's start with Unit 1: Kinematics.
 
-# UNIT 1: KINEMATICS 
+# Unit 1: Kinematics 
 
 ## Lesson 1
 
@@ -143,7 +143,10 @@ With limited information, I want you to describe the direction and speed of the 
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-Remember that speed only deals with magnitude, meaning it will be positive regardless of direction. **The speed of the object is increasing because each dot is spacing out more and more, or in other words the position is increasing after each interval, which is four seconds between every dot.** The object is becoming more negative, which means vectors like velocity and acceleration will be negative values. **Now that we have determined the direction to be negative,** we can look at the magnitude of acceleration. The change of position, or displacement, is doubling each time which makes velocity (the rate of change of position, or displacement) increase. **Since velocity is not increasing by the same value each time but instead increasing exponentially (2 times each interval) then that makes acceleration an increasing value not a constant one.** Note that acceleration is getting more negative, it is not increasing in the positive direction.
+Remember that speed only deals with magnitude, meaning it will be positive regardless of direction. 
+**The speed of the object is increasing because each dot is spacing out more and more, or in other words the position is increasing after each interval, which is four seconds between every dot.** The object is becoming more negative, which means vectors like velocity and acceleration will be negative values. 
+**Now that we have determined the direction to be negative,** we can look at the magnitude of acceleration. The change of position, or displacement, is doubling each time which makes velocity (the rate of change of position, or displacement) increase. 
+**Since velocity is not increasing by the same value each time but instead increasing exponentially (2 times each interval) then that makes acceleration an increasing value not a constant one.** Note that acceleration is getting more negative, it is not increasing in the positive direction.
 
 </details>
 
@@ -334,4 +337,262 @@ $$\Delta x = \frac{1}{2}(v_i + v_f)t$$
 ***Note that f represents final and i represents initial, also note that t means time***
 
 Keep the above equations in mind and use them only when acceleration is constant, each one is missing a variable to help you better identify which is best for a certain physics problem. These are central to kinematics, so ensure your algebra is up-to-par.
+
+### Kinematic Reasoning
+
+The equations you just studied are actually mathematical models. Meaning they can be derived from data. Graphs, number lines, situations, and tables are examples of common origins. Look at the velocity vs. time graph below:
+
+![Velocity vs. Time Graph #9](images/velocity_vs_time_9.png)
+
+Slope formula is represented as y = mx + b. Notice a similar equation above? $v_f = v_i + at$ can be rearranged to $v_f = at + v_i$. Now, each variable is aligned. y is equivalent to $v_f$, m is equivalent to a (the slope), x is equivalent to t, and b is equivalent to $v_i$ (initial velocity).
+
+The other three equations are proportional to different graphs and situations. Each is suited to accurately give a variable quantity, but you must choose the correct one. An easy way to identify a viable equation is to look for one without a known variable. Of course, make sure it contains the variable you are solving for and those that are known 
+
+Analyze the graph below (uniform acceleration of $5 m/s^2$):
+
+![Velocity vs. Position Graph #1](images/velocity_vs_position.png)
+
+Which equation is represented by the graph? That would be $v_f^2 = v_i^2 + 2a\Delta x$. This is because each variable is present in the graph. We can rearrange the equation to solve for position or velocity. If you calculate velocity from position data, you will get the equation v = $\sqrt{2ax}$, meaning linearization can increase clarity and better interpretation. Since we determined this graph to be a square root function, the data is viewed as $v \propto \sqrt{x}$ but is easier read as $v^2 \propto x$. Now we can adjust our data to fit this attempt at linearization:
+
+![Velocity vs. Position Graph #2](images/velocity_vs_position_2.png)
+
+Ahh! Now it's linear! Notice the data changes below:
+
+![Velocity vs. Position Graph #3](images/velocity_vs_position_3.png)
+
+Note that this is applicable to each of the equations mentioned above, deriving equations from graphs and linearizing them are important. Both contributed to the creation and use of kinematic equations. Remember that linearization clarifies relationships between variables, which are obscure in curved graphs.
+
+### Key Takeaways
+
+* Kinematic equations can be derived from graphs and data sets
+* Rearrange equations to solve for patterns (you could even make $\Delta x = v_i t + \frac{1}{2} a t^2$ represent a slope-intercept formula for a position vs. time graph if initial velocity is 0: $x = \frac{1}{2} at^2 + x_0$)
+* Identify proportional relationships to linearize effectively (in the slope-intercept equation above, $x \propto t^2$ or $\sqrt{x} = t$)
+* If an equation is in slope-intercept form, it will be linear regardless of an exponent as expressed in $x = \frac{1}{2} at^2 + x_0$
+* Analyze patterns to find the best suitable equation and what it represents in a graph
+
+### Kinematic Use
+
+Let's integrate kinematic equations into situations. Comparing methods of execution in regards to efficiency and time consumption is a task faced by many. Take Tesla for example, a company advanced in technology but also one exploring their options. Say it wants to create a new prototype that can compete with gas-powered super cars.
+
+* Vehicle A travels with a uniform acceleration of $5 m/s^2$.
+
+* Vehicle B has one half the time to travel with a uniform acceleration of $5 m/s^2$.
+
+**What is the relationship of position between the two vehicles?** Both have an initial velocity of 0.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is $x_B = \frac{1}{4} x_A$.** The second kinematic equation is best for this, $\Delta x = v_i t + \frac{1}{2} a t^2$.
+
+* $v_i$ = 0
+* That leaves $\Delta x = \frac{1}{2} a t^2$
+* This means $x \propto t^2$ or $\sqrt{x} = t$
+* We know that Vehicle B's time is half the time of A's, so $t_B = \frac{1}{2}t_A$
+
+Now, we can compare:
+
+$\frac{\Delta x_B = \frac{1}{2} a \frac{1}{2}t_B^2}{\Delta x_A = \frac{1}{2} a t_A^2}$
+
+$\frac{\Delta x_B = (\frac{1}{2}t_A)^2}{\Delta x_A = t_A^2}$
+
+$x_B = \frac{1}{4} x_A$ or $4x_B = x_A$.
+
+#### Quick Note
+
+Going back to the proportion $x \propto t^2$, we can actually find our answer much quicker. Since acceleration is the same for both A and B, that makes A $x = t_A^2$ and $x = \frac{1}{2}t_A^2$. When set equal to each other, we divide to get our same answers of $x_A = 4x_B$ and $x_B = \frac{1}{4} x_A$.
+
+</details>
+
+### Kinematic Functions
+
+Derivations are central to kinematics because they help in the creation of new equations. We know that average velocity is equal to $\frac {x - x_0}{t}$. This formula is applicable to any types of motion whether variable or constant. But a kinematic version of average velocity is $\frac {v + v_0}{2}$. This means that $\frac {x - x_0}{t} = \frac {v + v_0}{2}$. Remember that $\Delta x = x_f - x_0$. Let's go through five problems to help in choosing and solving the correct kinematic equation. Note that you may need to use multiple kinematic equations to find the correct value.
+
+#### Problem 1
+
+A deer stops then runs across a 10 meter roadway at an acceleration of $2.5 m/s^2$. **How many seconds to get to the other side?** Round to the nearest whole number.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 3 seconds.** The deer has an initial velocity of 0 since it stops before running. That makes $\Delta x = v_i t + \frac{1}{2} a t^2$ our best choice. So, $10 = \frac{1}{2} 2.5 m/s^2 t^2$. Then, $10 = 1.25 t^2$. Finally, $\sqrt{8} \approx 2.83$s.
+
+</details>
+
+#### Problem 2
+
+A cruise ship travels for 1,000 meters and reaches a peak speed of 20 m/s. **What is the ship's acceleration?** Round to the nearest tenth.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is $0.2 m/s^2$.** For this one, you must use $v_f^2 = v_i^2 + 2a\Delta x$. Solve for acceleration. $400 m/s = 2a(2,000)$. Then, $400 m/s = 2,000a$. Finally, a = $0.2 m/s^2$.
+
+</details>
+
+#### Problem 3
+
+In an airport, a luggage bag is carried on a conveyor belt at a speed of 2 m/s then arrives 20 meters later at a speed of 4 m/s. **How long does the bag take to reach its destination?** Round to the nearest whole number.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 7 seconds.** For this one, you must use $\Delta x = \frac{1}{2}(v_i + v_f)t$. We can find out answer directly using this equation. Let's plug in our known values. So, $20 = \frac{1}{2}(2 m/s + 4 m/s)t$. Then, $20 = 3t$. Finally, $t \approx 6.67$s or 7 seconds.
+
+</details>
+
+#### Problem 4
+
+A cargo ship reached its halfway point at a velocity of 8 m/s and an acceleration of $0.1 m/s^2$ over 2,000 meters. **What is the ship's final velocity?** Round to the nearest tenth.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 21.5 m/s.** For this one, you must use $v_f^2 = v_i^2 + 2a\Delta x$. This equation has each of our known values except for final velocity. So, $v_f^2 = 64 m/s + 2 \times 0.1 \times 2,000$. Finally, $v_f = \sqrt 464 or 21.5 m/s$.
+
+</details>
+
+#### Problem 5
+
+A train is delivering essentials for a nearby city. The locomotive traveled for another 600 meters over 40 seconds at a velocity of 15 m/s and an acceleration of 0. **What is the train's final velocity?** Round to the nearest tenth.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 15.0 m/s.** For this one, you must use $v_f = v_i + at$. Let's plug in. So, $v_f = 15 m/s + 0 m/s^2 \times 40s$. Finally, $v_f = 15.0 m/s$.
+
+</details>
+
+### Free Fall
+
+#### Gravity in Physics
+
+What's the first thing that comes to mind? An apple falling on Newton's head? Well, you're not wrong! Gravity ensures every object that comes up comes down. From a physics standpoint, this can be represented in the same graphs we learned in the previous lesson and quantified with equations.
+
+#### Key Concepts
+
+* The longer an object is in the air, the more it will speed up downwards. Take the graph below for example:
+
+![Velocity vs. Time Graph #10](images/velocity_vs_time_10.png)
+
+* Acceleration in free fall ALWAYS has negative direction and a magnitude of $-9.8 m/s^2$, meaning its constant
+* If an object is thrown, launched, or pushed, its initial velocity is NOT zero, compared to when the object is released
+* Choosing a coordinate system is flexible, up can be negative while down can be positive, but values MUST be consistent in your kinematic equations
+* Each graph is applicable to free fall but must represent the correct motions
+* Velocity is variable while acceleration is constant at $-9.8 m/s^2$
+* At the peak of an object's trajectory, velocity will be zero but acceleration will remain at its constant direction and magnitude
+
+#### Graph Analysis
+
+![Velocity vs. Time Graph #10](images/velocity_vs_time_10.png)
+
+Since the graph above is linear, we will use $y = mx + b$ to describe our motions. The slope can be calculated by $\frac{-98 m/s - 0 m/s}{10s - 0s} = -9.8 m/s^2$. Rearranged, we get $y = -9.8x + 0$. This is also known as our line of best fit.
+
+* y = velocity
+* m = acceleration
+* x = time
+* b = initial velocity
+
+**What is the final velocity of this graph?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is -98 m/s.** There are many ways to figure this out. Since the exact velocity end mark is obscure, we can plug in the final x, or time, value of 10s. So, $y = -9.8 \times 10$. Finally, $y = -98 m/s$. 
+
+</details>
+
+Let's go through two launched and two released projectiles. Note each explanation.
+
+![Position vs. Time Graph #4](images/position_vs_time_4.png)
+
+This graph involves a projectile launched upwards. Note the positive but rapid increase in position and then immediate decline once gravity takes hold. Since we are dealing with a parabola, the best equation will be $\Delta x = v_i t + \frac{1}{2} a t^2$. Whenever an object is launched, it will have an initial velocity greater than zero. Let's solve for that value. We can plug in any x value so long that it corresponds to a time. So, $1.6m = v_i(4) - 4.9(4)^2$. Then, $1.6m = 4v_i - 78.4$. Finally, $v_i = 20 m/s$. **What is the object's maximum height?** Round to the nearest tenth.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 20.4 meters.** We can approximate a value by looking at the graph. But a more exact precision will require $\Delta x = v_i t + \frac{1}{2} a t^2$. At 2 seconds the object reached its peak, so $\Delta x = 20(2) + \frac{1}{2} -9.8 (2)^2$. Then, $\Delta x = 40 - 19.6$. Finally, $\Delta x = 20.4$ meters.
+
+</details>
+
+![Velocity vs. Time Graph #11](images/velocity_vs_time_11.png)
+
+This graph involves a projectile launched upwards. Note the velocity starting above zero. Gravitational acceleration will cause the velocity to slope downwards. Initial velocity is 30 m/s, meaning the object was thrown at that speed and force. Since we are dealing with a linear graph, $v = v_0 + at$ is best to represent each value. To confirm free fall, we can calculate for slope $\frac{-68 - 30}(10 - 0) = \frac{-98}{10} = -9.8 m/s^2$. ✅Free fall confirmed. **When is the object at its maximum height?** Round to the nearest whole number.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 3 seconds.** Maximum height indicates a velocity of zero since the object would be stationary for an instant. One can easily find the answer by $0 = 30 - 9.8t$, $-30 = -9.8t$, $t \approx 3s$. Or, you can look on the x-axis when y = 0. Both give you 3 seconds.
+
+</details>
+
+![Acceleration vs. Time Graph #7](images/acceleration_vs_time_7.png)
+
+This graph involves a released projectile. Note that even if the object was launched, its data would look identical to the above. An acceleration vs. time graph is universally the same across every free fall scenario. Acceleration is constant at $-9.8 m/s^2$, so a straight, horizontal line at y = -9.8 is accurate.
+
+![Position vs. Time Graph #5](images/position_vs_time_5.png)
+
+This graph involves a released projectile. Note the steady but negative decrease in position. Since no other force acted on it upon release, initial velocity is zero. The graph is parabolic, meaning we should use $\Delta x = v_i t + \frac{1}{2} a t^2$. This simplifies to $\Delta x = \frac{1}{2} a t^2$. Let's confirm the free fall by finding acceleration. $-490 = \frac{1}{2} a (10)^2$, $-490 = 50a$, $a = -9.8 m/s^2$. ✅Free fall confirmed. **What is the object's maximum height?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 0 meters.** The object was released downwards, so it will not have a peak. This is a key difference between launched and released projectiles.
+
+</details>
+
+#### Important Note
+
+Projectiles can be launched downwards too, so they will be reverse to their upward counterparts. Take a look below:
+
+![Velocity vs. Time Graph #12](images/velocity_vs_time_12.png)
+
+**What is the initial velocity?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is -10 m/s.** $v_f = v_0 + at$. $-10$ m/s$ = v_0 - 9.8(0)$, $v_0 = -10$ m/s.
+
+</details>
+
+#### Velocity & Acceleration Diagrams
+
+In free fall, velocity and acceleration share a motion visual:
+
+![Velocity & Acceleration Diagram #1](images/acceleration_and_velocity.png)
+
+The image above represents vertical velocity and acceleration. Besides graphs, diagrams can convey information just as effectively. When the object starts moving up, velocity gradually decreases. Note that acceleration maintains a constant $-9.8 m/s^2$ throughout the whole motion. At the object's peak, it temporarily stops moving since velocity is zero. **What is happening to the velocity after the peak?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**Velocity is gradually gaining speed in the negative direction.** Magnitude increases but direction switches from positive to negative. Notice the arrows getting larger on the way down, this indicates an increase in speed.
+
+</details>
+
+#### Common Misconceptions
+
+* An object doesn't have to be lighter than another to fall. This is due surface area, another component of air resistance. Take a sticky note and a pencil, at first the pencil would fall faster but once you crumple up the sticky note they will seem even.
+* Weight and speed also contribute air resistance
+* Air resistance does not affect an object significantly in free fall, including its trajectory
+* The coordinate system is arbitrary and reflects personal choice
+* Free fall happens when gravity is the only affecting agent, meaning the process starts even when an object is going up
+
+### Think Like a Physicist
+
+An acrobat is performing manuevers on a balance beam. She reaches a peak after 0.20 seconds of being midair. A judge wants to calculate her displacement given that she had an average velocity of 2 m/s. **What is the acrobat's total displacement?** Round to the nearest tenth.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 0.8 meters.** The peak of motion represents a halfway point, so total time is $0.20s \times 2 = 0.40s$. One of the average velocity formulae is $\frac{x - x_0}{t}$, which includes displacement! Note that the initial position of this motion is zero. So, 2 m/s = $\frac{x}{0.40s}$. Finally, $x = 0.8$ m.
+
+</details>
+
+### Practice
+
+[Let's test your knowledge, take the free fall & kinematics quiz here](Quiz3.html)
+
+## Lesson 4
 
