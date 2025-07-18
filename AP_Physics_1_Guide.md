@@ -596,3 +596,70 @@ An acrobat is performing manuevers on a balance beam. She reaches a peak after 0
 
 ## Lesson 4
 
+Our final lesson will be focused on two-dimensional motion. Ensure your geometry is up-to-par because shapes will play a role in concepts and calculations. Graphs will be a significant factor in the content as well. Let's dive in.
+
+### Vector Components
+
+Components of motion are divided into horizontal and vertical sides. But if a ball is kicked at an angle, it may not fit either of those dimensions. Therefore, we make the components perpendicular to each other. By combining both, we get the length of the total vector (magnitude), also known as the hypotenuse. The vector arrows represent direction across each component, including the total vector. At launch, the hypotenuse reveals an initial vector, be it position, velocity, etc. Theta will quantify the object's angle into degrees. Let's picture this:
+
+![Two-Dimensional Motion #1](images/two_dimensional.png)
+
+Analyze the horizontal and vertical portions of velocity. Intersecting the vertical and total velocity vectors, a wagon is positioned. Note that the hypotenuse does not indicate trajectory, but rather the total velocity that this situation represents. Theta, although unmarked, gives the exact angle at which this wagon was. In physics, angles are better represented in degrees for clarity. They are important in identifying an object's angular location, and how it released or thrown.
+
+### Trigonometric Basics
+
+![Two-Dimensional Motion #2](images/two_dimensional_2.png)
+
+The triangle is labeled a, b, and c on its three sides. **Which letters represent the hypotenuse, opposite, and adjacent sides?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**A -- adjacent. B -- opposite. C -- hypotenuse.**
+
+</details>
+
+Theta is crucial for sine, cosine, and tangent functions. Memorize the saying: soh-cah-toa. From θ on the bottom left, sine is $\frac{b}{c}$, cosine is $\frac{a}{c}$, and tangent is $\frac{b}{a}$.
+
+* **Sine: $\frac{opposite}{hypotenuse}$**
+* **Cosine: $\frac{adjacent}{hypotenuse}$**
+* **Tangent: $\frac{opposite}{adjacent}$**
+
+#### Vector Arrows
+
+Triangular arrows are crucial in geometric physics. They show the direction of a vector among every component: vertical, horizontal, and total. The hypotenuse, or total vector, will reflect the direction of its adjacent and opposite sides. Take the triangle above for example. Assuming right is positive and down is negative, every component is negative. The hypotenuse is completely negative because its arrow faces left and down!
+
+Picture the situation below:
+
+A man runs two meters to the left and four meters up a ladder. **Which vector represents the total position component?**
+
+A. ![Vector Arrow #1](images/vector_arrows.png)
+B. ![Vector Arrow #2](images/vector_arrows_2.png)
+C. ![Vector Arrow #3](images/vector_arrows_3.png)
+D. ![Vector Arrow #4](images/vector_arrows_4.png)
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**B is the correct answer.** The total vector arrow must match that of its horizontal and vertical components. It's better to draw the scenario than to imagine it. Note the drawing below:
+
+![Two-Dimensional Motion #3](images/two_dimensional_3.png)
+
+The horizontal arrow points to the left, and the vertical arrow points up. The total vector arrow points in both directions. Note the position values. The hypotenuse is unknown, **what can we do to reveal its magnitude? Round to the nearest tenth.**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**We can reveal the magnitude by using the pythagorean theorem.** Note that the adjacent side is negative. Any of the two components can be positive or negative. However, the total vector must be positive. This is because the length of the vector, also known as the distance or magnitude, is a scalar quantity. Remember to correspond and match each vector arrow in a two-dimensional diagram.
+
+</details>
+
+**What is the value of the hypotenuse?**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 4.5 m. We must use the equation $a^2 + b^2 = c^2$. Let's plug in, $(-2)^2 + (4)^2 = c^2$. So, $4 + 16 = c^2$. Finally, $\sqrt{20} = 4.5$ m.
+
+</details>
+
