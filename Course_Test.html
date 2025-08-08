@@ -1,0 +1,148 @@
+<html><head><style>
+.layout {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: left;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.quiz-btn {
+  background-color: #f0f0f0;
+  border: 2px solid #0074D9;
+  color: #0074D9;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.quiz-btn:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+
+</style>
+
+<script>
+let lastClicked = null;
+
+function check(btn, correct, message, feedbackId) {
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  const feedback = document.getElementById(feedbackId);
+
+  if (lastClicked === btn) {
+    feedback.innerHTML = "";
+    lastClicked = null;
+    return;
+  }
+
+  const buttons = document.querySelectorAll('.quiz-btn');
+  buttons.forEach(b => b.style.background = "");
+
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  feedback.innerHTML = message;
+  if (window.MathJax) {
+    MathJax.typesetPromise([feedback]);
+  }
+  lastClicked = btn;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Course Test</h1>
+
+<p><b>1. Are directions on a coordinate system fixed or flexible?</b></p>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The directions on a coordinate system are subjective and based on personal whim. However, your calculations and specifications must remain consistent. Otherwise, you will get the wrong answer every time.', 'feedback1')">
+    Flexible, they can change at all.
+  </button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">
+    Flexible, they cannot change at all.
+  </button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">
+    Fixed, they can change.
+  </button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">
+    Fixed, they cannot change at all.
+  </button>
+  
+<div id="feedback1" style="margin-top:10px; font-weight:bold;"></div>
+
+<p><b>2. From the graph below, what is the total displacement? Round to the nearest whole number.</b></p>
+<div class="layout">
+<img src="images/dimensional_graph_22.png">
+</div>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">
+    -127 meters
+  </button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">
+    -100 meters
+  </button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">
+    Not enough information
+  </button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Find the area between the line and the x-axis. Break it into two triangles and two rectangles. The first triangle: &frac12; 3 &times; -12 = -18 m. The first rectangle: 3 &times; -12 = -36 m. The second triangle: &frac12; 4 &times; -8 = -16 m. The second rectangle: 4 & -12 = -48 m. Add them all up. -18 - 36 - 16 - 48 = -118 meters.', 'feedback2')">
+    -118 meters
+  </button>
+
+<div id="feedback2" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>3. After visiting the gas station, a car is on the freeway with a boost of 4 m/s. The vehicle maintains a constant acceleration of 0.3 m/s<sup>2</sup>. The highway is 1,500 meters long. <b>What is the car's final velocity? Round to the nearest tenth.</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">
+    40.3 m/s
+  </button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">
+    20.3 m/s
+  </button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use v<sub>f</sub><sup>2</sup> = v<sub>i</sub><sup>2</sup> + 2aΔx. Plug in known values, v<sub>f</sub><sup>2</sup> = (4)<sup>2</sup> + 2(0.3 m/s<sup>2</sup>)(1,500 m). Simplify, v<sub>f</sub><sup>2</sup> = 916. Take the square root. Finally, v<sub>f</sub> &#8776; 30.3 meters. ', 'feedback3')">
+    30.3 m/s
+  </button>
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">
+    50.3 m/s
+  </button>
+
+  <div id="feedback3" style="margin-top:10px; font-weight:bold;"></div>
+
+  <p>4. A paper airplane is thrown with a velocity of 8 m/s at a 67&deg; angle and falls after 10 seconds. <b>Which of the following represent the horizontal and vertical velocity?</b></p>
+  <div class="layout">
+    <button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The line should start and end at 8 m/s since the horizontal dimension has no acceleration. So, v<sub>f</sub> = v<sub>i</sub> + at turns into v<sub>f</sub> = v<sub>i</sub>. The new equation details a constant velocity.', 'feedback4')">
+    <img src="images/dimensional_graph_25.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">
+    <img src="images/dimensional_graph_26.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">
+    <img src="images/dimensional_graph_24.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The line should start at 8 m/s and decrease at a linear rate according to v<sub>f</sub> = v<sub>i</sub> + at.', 'feedback4')">
+    <img src="images/dimensional_graph_23.png">
+  </button>
+</div>
+
+<div id="feedback4" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>5. <b>Which of the following represent the plane's horizontal and vertical position?</b></p>
+<div class="layout">
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">
+    <img src="images/dimensional_graph_30.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δx = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. The easiest way to differentiate this graph from the other is to cancel out half of the equation. We are left with Δx = v<sub>i</sub>t. The initial horizontal velocity is positive at 3.1 m/s. This confirms a positively growing position vector since time cannot be negative. You can use your conceptual skills as well. Since the initial horizontal velocity is positive and has nothing acting on it, then the horizontal position will grow in the positive direction without resistance unlike its gravity-affected counterpart.', 'feedback5')">
+    <img src="images/dimensional_graph_29.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δy = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. Thrown at 67&deg;, the plane\'s vertical position should increase for 1 second. The other graph shows an immediate decrease. You can plug values into the equation or note the plane\'s positive initial vertical velocity of 7.4 m/s.', 'feedback5')">
+    <img src="images/dimensional_graph_27.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">
+    <img src="images/dimensional_graph_28.png">
+  </button>
+</div>
+
+<div id="feedback5" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>6. </p>
+
+<div id="feedback6" style="margin-top:10px; font-weight:bold;"></div>

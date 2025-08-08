@@ -1,0 +1,297 @@
+<html><head><style>
+.layout {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: left;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.quiz-btn {
+  background-color: #f0f0f0;
+  border: 2px solid #0074D9;
+  color: #0074D9;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.quiz-btn:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+
+</style>
+
+<script>
+let lastClicked = null;
+
+function check(btn, correct, message, feedbackId) {
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  const feedback = document.getElementById(feedbackId);
+
+  if (lastClicked === btn) {
+    feedback.innerHTML = "";
+    lastClicked = null;
+    return;
+  }
+
+  const buttons = document.querySelectorAll('.quiz-btn');
+  buttons.forEach(b => b.style.background = "");
+
+  btn.style.background = correct ? 'lightgreen' : 'salmon';
+  feedback.innerHTML = message;
+  if (window.MathJax) {
+    MathJax.typesetPromise([feedback]);
+  }
+  lastClicked = btn;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Practice Quiz #4</h1>
+
+<p>1. A kangaroo runs fifteen meters away before jumping down ten meters. <b>Which of the following represents the total position vector?</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">
+  <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+  <line x1="20" y1="20" x2="80" y2="80"
+        stroke="black" stroke-width="2"
+        marker-end="url(#arrowhead)" />
+</svg>
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">
+  <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+  <line x1="80" y1="80" x2="20" y2="20"
+        stroke="black" stroke-width="2"
+        marker-end="url(#arrowhead)" />
+</svg>
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The kangaroo is running away, so the horizontal component will be negative. The kangaroo is jumping down, so the vertical component will also be negative. To match this, the total position vector must be going down in the left direction.', 'feedback1')">
+  <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+  <line x1="80" y1="20" x2="20" y2="80"
+        stroke="black" stroke-width="2"
+        marker-end="url(#arrowhead)" />
+</svg>
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback1')">
+  <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+  <line x1="20" y1="80" x2="80" y2="20"
+        stroke="black" stroke-width="2"
+        marker-end="url(#arrowhead)" />
+</svg>
+</button>
+
+<div id="feedback1" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>2. A ball is launched upwards and travels at a 45&deg; angle. <b>Which of the following represents the velocity components?</b></p>
+<div class="layout">
+  <button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Since we are dealing with a 45&deg; angle, both velocity components will be equal. This checks out. But we must confirm the values. Use cosine and sine to find the total velocity vector. cos(45&deg;) = <sup>12 m/s</sup> &frasl; <sub>x</sub>. Divide cos(45&deg;) by 12 m/s to get 17 m/s. sin(45&deg;) = <sup>12 m/s</sup> &frasl; <sub>x</sub>. Divide sin(45&deg;) by 12 m/s to also get 17 m/s.', 'feedback2')">
+    <img src="images/two_dimensional_8.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">
+    <img src="images/two_dimensional_9.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">
+    <img src="images/two_dimensional_10.png">
+  </button>
+  <button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback2')">
+    <img src="images/two_dimensional_11.png">
+  </button>
+</div>
+
+<div id="feedback2" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>3. <b>From the image below, which of the following represent the angle and the horizontal dimension? Round to the nearest whole number.</b>
+<div class="layout">
+  <img src="images/two_dimensional_12.png">
+</div>
+</p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">
+  112&deg; and 5 meters
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use the inverse sine function. sin θ = <sup>13</sup> &frasl; <sub>14</sub>. Now, θ = sin<sup>-1</sup>(<sup>13</sup> &frasl; <sub>14</sub>). θ &#8776; 68 degrees. However, a negative horizontal dimension means we should be in Quadrant 2 (90&deg; to 180&deg;), not Quadrant 1 (0&deg; to 90&deg;). So, subtract 68&deg; from 180&deg; to get 112&deg;. To find the horizontal value, use the pythagorean theorem. a<sup>2</sup> + 169 = 196. a = &radic;27, or &#8776; 5. The arrow points to the left, so add a negative sign: -5 meters.', 'feedback3')">
+  112&deg; and -5 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">
+  95&deg; and 5 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback3')">
+  95&deg; and -5 meters
+</button>
+
+<div id="feedback3" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>4. <b>From the image below, which of the following represents the relationship between the two components?</b></p>
+<div class="layout">
+  <img src="images/two_dimensional_13.png">
+</div>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">
+  v<sub>x</sub> &prop; 2v<sub>y</sub>
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">
+  2v<sub>x</sub> &prop; v<sub>y</sub>
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback4')">
+  v<sub>x</sub> &prop; &frac12; v<sub>y</sub>
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. A 45&deg; angle denotes that both components are equal to each other regardless of the total vector.', 'feedback4')">
+  v<sub>x</sub> &prop; v<sub>y</sub>
+</button>
+
+<div id="feedback4" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>5. <b>From the image below, which of the following represents the vertical component and the total vector? Round to the nearest tenth.</b></p>
+<div class="layout">
+  <img src="images/two_dimensional_14.png">
+</div>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use the tangent function to find the vertical component. tan(63&deg;) = <sup>-7 m</sup> &frasl; <sub>o</sub>. Now, o &#8776; -12.6 m. Use the pythagorean theorem, (-7)<sup>2</sup> + (-12.6)<sup>2</sup> = c<sup>2</sup>. Finally, c &#8776; 14.4 m.', 'feedback5')">
+  x<sub>y</sub> = -12.6 meters, v<sub>T</sub> = 14.4 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">
+  x<sub>y</sub> = 12.6 meters, v<sub>T</sub> = 14.4 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">
+  x<sub>y</sub> = -12.6 meters, v<sub>T</sub> = 16.4 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback5')">
+  x<sub>y</sub> = 12.6 meters, v<sub>T</sub> = 16.4 meters
+</button>
+
+<div id="feedback5" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>6. A wagon filled with goods is pushed down a loading ramp. The motion stops after three seconds so a nearby trailer can haul the goods.<b>From the image and information provided, which of the following represents the horizontal and vertical displacement? Round to the nearest hundredth.</b></p>
+<div class="layout">
+  <img src="images/dimensional_graph_13.png">
+</div>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback6')">
+  2.45 meters and -42.37 meters
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. First, find the initial horizontal and vertical velocities. Let\'s start with horizontal. cos(81.2&deg;) = <sup>v<sub>x</sub></sup> &frasl; <sub>3.6 m/s</sub>. v<sub>x</sub> = 0.55 m/s. Now let\'s do the vertical dimension. sin(81.2&deg;) = <sup>v<sub>y</sub></sup> &frasl; <sub>3.6 m/s</sub>. v<sub>y</sub> = 3.56 m/s. Use Δx = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. Plug in, Δx = 0.55(3). Δx &#8776; 1.65 meters. Use Δy = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. Δy = 3.56(3) - 4.9(3)<sup>2</sup>. Δy &#8776; -33.42 meters.', 'feedback6')">
+  1.65 meters and -33.42 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback6')">
+  1.85 meters and -38.92 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback6')">
+  2.15 meters and -27.82 meters
+</button>
+
+<div id="feedback6" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>7. A marble is launched horizontally before falling 32 meters down. <b>How long does the motion take? Round to the nearest whole number.</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">
+  5 seconds
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">
+  7 seconds
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δy = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. Plug in, -32 = -4.9t<sup>2</sup>. Divide and take the square root. Finally, round 2.56 to get 3 seconds.', 'feedback7')">
+  3 seconds
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback7')">
+  1 second
+</button>
+
+<div id="feedback7" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>8. A family of five are having dinner together. The father tosses a salt shaker across the table at a 45&deg; angle with an initial velocity of 6 m/s. <b>What is the horizontal displacement? Round to the nearest whole number.</b></p>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')">
+  2 meters
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Use Δy = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. Find the two initial component velocities. For horizontal, cos(45&deg;) = <sup>a</sup> &frasl; <sub>6 m/s</sub>. Both components are &#8776; 4.243 because of the 45&deg; angle. Since there is zero vertical displacement, make a quadratic. 0 = -4.9t<sup>2</sup> + 4.243t. Solve, <sup>-4.243 &#177; 4.243</sup> &frasl; <sub>-9.8</sub>. Time is about 0.87 seconds. Plug in, Δx = 4.243(0.87). Δx &#8776; 4 meters.', 'feedback8')">
+  4 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')">
+  6 meters
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback8')">
+  8 meters
+</button>
+
+<div id="feedback8" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>9. In a competition, a professional diver jumps off a ledge and lands 5 seconds later. <b>Which of the following represent her midair acceleration?</b></p>
+<div class="layout">
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')">
+  <img src="images/dimensional_graph_14.png">
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback9')">
+  <img src="images/dimensional_graph_15.png">
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The horizontal dimension has zero acceleration in free fall.', 'feedback9')">
+  <img src="images/dimensional_graph_7.png">
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The vertical dimension has a constant acceleration of -9.8 m/s<sup>2</sup>.', 'feedback9')">
+  <img src="images/dimensional_graph_8.png">
+</button>
+</div>
+
+<div id="feedback9" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>10a. An automatic baseball machine throws baseballs horizontally with an initial velocity of 9 m/s over 5 seconds. <b>Which of the following represent the baseball's velocity?</b></p>
+<div class="layout">
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The baseball\'s velocity will stay constant at 9 m/s since horizontal acceleration is nonexistent in free fall.', 'feedback10a')">
+  <img src="images/dimensional_graph_16.png">
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. The baseball\'s velocity will linearly decrease because of gravity. Note that the initial velocity here is 0 since the balls are launched horizontally not vertically.', 'feedback10a')">
+  <img src="images/dimensional_graph_10.png">
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10a')">
+  <img src="images/dimensional_graph_17.png">
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10a')">
+  <img src="images/dimensional_graph_18.png">
+</button>
+</div>
+
+<div id="feedback10a" style="margin-top:10px; font-weight:bold;"></div>
+
+<p>10b. <b>Which of the following represent the baseball's position?</b></p>
+<div class="layout">
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Plug into this equation to get these values: Δy = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. Remember that there is zero initial vertical velocity.', 'feedback10b')">
+  <img src="images/dimensional_graph_12.png">
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10b')">
+  <img src="images/dimensional_graph_21.png">
+</button>
+<button class="quiz-btn" onclick="check(this, false, 'Not quite! Try again.', 'feedback10b')">
+  <img src="images/dimensional_graph_20.png">
+</button>
+<button class="quiz-btn" onclick="check(this, true, 'Yes! That\'s correct. Plug into this equation to get these values: Δx = v<sub>i</sub>t + &frac12; at<sup>2</sup></button>. Remember that there is zero horizontal acceleration but an initial horizontal velocity of 9 m/s.', 'feedback10b')">
+  <img src="images/dimensional_graph_19.png">
+</button>
+</div>
+
+<div id="feedback10b" style="margin-top:10px; font-weight:bold;"></div>
+
+</body>
+</html>

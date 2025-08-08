@@ -2,6 +2,8 @@
 
 Welcome! I am delighted to be your mentor through one of the hardest classes you will take in high school, but by the end of your experience, these tricky concepts will transform into basic logic. College Board has notoriously made this course one of its most challenging, but after you give me a little bit of your time and attention each day, I guarantee that you will get something out of this. It is my passion to help students feel less pressure in the classroom, so I made this guide as beginner-friendly as possible. Let's start with Unit 1: Kinematics.
 
+**Disclaimer: I created this guide on my own, but Khan Academy's content contributed significantly. So a special thanks and recognition to their crew. Without further ado, let's begin.**
+
 # Unit 1: Kinematics 
 
 ## Lesson 1
@@ -366,7 +368,7 @@ Note that this is applicable to each of the equations mentioned above, deriving 
 
 * Kinematic equations can be derived from graphs and data sets
 * Rearrange equations to solve for patterns (you could even make $\Delta x = v_i t + \frac{1}{2} a t^2$ represent a slope-intercept formula for a position vs. time graph if initial velocity is 0: $x = \frac{1}{2} at^2 + x_0$)
-* Identify proportional relationships to linearize effectively (in the slope-intercept equation above, $x \propto t^2$ or $\sqrt{x} = t$)
+* Identify proportional relationships to linearize effectively (in the slope-intercept equation above, $x \propto t^2$ or $\sqrt{x} \propto t$)
 * If an equation is in slope-intercept form, it will be linear regardless of an exponent as expressed in $x = \frac{1}{2} at^2 + x_0$
 * Analyze patterns to find the best suitable equation and what it represents in a graph
 
@@ -517,7 +519,7 @@ This graph involves a projectile launched upwards. Note the positive but rapid i
 
 ![Velocity vs. Time Graph #11](images/velocity_vs_time_11.png)
 
-This graph involves a projectile launched upwards. Note the velocity starting above zero. Gravitational acceleration will cause the velocity to slope downwards. Initial velocity is 30 m/s, meaning the object was thrown at that speed and force. Since we are dealing with a linear graph, $v = v_0 + at$ is best to represent each value. To confirm free fall, we can calculate for slope $\frac{-68 - 30}(10 - 0) = \frac{-98}{10} = -9.8 m/s^2$. ✅Free fall confirmed. **When is the object at its maximum height?** Round to the nearest whole number.
+This graph involves a projectile launched upwards. Note the velocity starting above zero. Gravitational acceleration will cause the velocity to slope downwards. Initial velocity is 30 m/s, meaning the object was thrown at that speed and force. Since we are dealing with a linear graph, $v = v_0 + at$ is best to represent each value. To confirm free fall, we can calculate for slope $\frac{-68 - 30}{10 - 0} = \frac{-98}{10} = -9.8 m/s^2$. ✅Free fall confirmed. **When is the object at its maximum height?** Round to the nearest whole number.
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
@@ -596,7 +598,7 @@ An acrobat is performing manuevers on a balance beam. She reaches a peak after 0
 
 ## Lesson 4
 
-Our final lesson will be focused on two-dimensional motion. Ensure your geometry is up-to-par because shapes will play a role in concepts and calculations. Graphs will be a significant factor in the content as well. Let's dive in.
+Our final lesson will be focused on two-dimensional motion. Ensure your geometry is up-to-par because shapes will play a role in concepts and calculations. Graphs will be a significant factor in the content as well. We will be using degrees, but using radians is common too. Configure your calculator to fit the scenario. Let's dive in.
 
 ### Vector Components
 
@@ -604,7 +606,7 @@ Components of motion are divided into horizontal and vertical sides. But if a ba
 
 ![Two-Dimensional Motion #1](images/two_dimensional.png)
 
-Analyze the horizontal and vertical portions of velocity. Intersecting the vertical and total velocity vectors, a wagon is positioned. Note that the hypotenuse does not indicate trajectory, but rather the total velocity that this situation represents. Theta, although unmarked, gives the exact angle at which this wagon was. In physics, angles are better represented in degrees for clarity. They are important in identifying an object's angular location, and how it released or thrown.
+Analyze the horizontal and vertical portions of velocity. Intersecting the vertical and total velocity vectors, a wagon is positioned. Note that the hypotenuse does not indicate trajectory, but rather the total velocity that this situation represents. Theta, although unmarked, gives the exact angle at which this wagon was. For clarity, angles are better represented in degrees. They are important in identifying an object's angular location, and how it is released or thrown.
 
 ### Trigonometric Basics
 
@@ -619,7 +621,9 @@ The triangle is labeled a, b, and c on its three sides. **Which letters represen
 
 </details>
 
-Theta is crucial for sine, cosine, and tangent functions. Memorize the saying: soh-cah-toa. From θ on the bottom left, sine is $\frac{b}{c}$, cosine is $\frac{a}{c}$, and tangent is $\frac{b}{a}$.
+#### Trigonometric Functions
+
+Theta is crucial for sine, cosine, and tangent functions. All right triangles use these. The components are perpendicular to better visualize angles. A total vector is formed from its resolved components, and therefore make a right triangle compatible with each law of trigonometry. Memorize the mnemonic soh-cah-toa. From θ on the bottom left, s sine is $\frac{b}{c}$, cosine is $\frac{a}{c}$, and tangent is $\frac{b}{a}$.
 
 * **Sine: $\frac{opposite}{hypotenuse}$**
 * **Cosine: $\frac{adjacent}{hypotenuse}$**
@@ -633,24 +637,28 @@ Picture the situation below:
 
 A man runs two meters to the left and four meters up a ladder. **Which vector represents the total position component?**
 
-A. ![Vector Arrow #1](images/vector_arrows.png)
-B. ![Vector Arrow #2](images/vector_arrows_2.png)
-C. ![Vector Arrow #3](images/vector_arrows_3.png)
-D. ![Vector Arrow #4](images/vector_arrows_4.png)
+A. ![Vector Arrows #1](images/vector_arrows.png)
+B. ![Vector Arrows #2](images/vector_arrows_2.png)
+C. ![Vector Arrows #3](images/vector_arrows_3.png)
+D. ![Vector Arrows #4](images/vector_arrows_4.png)
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-**B is the correct answer.** The total vector arrow must match that of its horizontal and vertical components. It's better to draw the scenario than to imagine it. Note the drawing below:
+**B is the correct answer.** The total vector arrow must match that of its horizontal and vertical components. 
 
-![Two-Dimensional Motion #3](images/two_dimensional_3.png)
+</details>
+
+It's better to draw the scenario than to imagine it. Note the drawing below:
+
+<img src="images/two_dimensional_3.png" style="display:block; margin:auto;">
 
 The horizontal arrow points to the left, and the vertical arrow points up. The total vector arrow points in both directions. Note the position values. The hypotenuse is unknown, **what can we do to reveal its magnitude? Round to the nearest tenth.**
 
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-**We can reveal the magnitude by using the pythagorean theorem.** Note that the adjacent side is negative. Any of the two components can be positive or negative. However, the total vector must be positive. This is because the length of the vector, also known as the distance or magnitude, is a scalar quantity. Remember to correspond and match each vector arrow in a two-dimensional diagram.
+**We can reveal the magnitude by using the pythagorean theorem.** Note that the adjacent side is negative. Any of the two components can be positive or negative. However, the total vector must be positive. This is because the length of the vector, also known as the distance or magnitude, is a scalar quantity. Remember to correspond and match each vector arrow in a two-dimensional diagram. Also note that theta, or the angle in degrees, represents total vector's direction. However, the components determine its magnitude.
 
 </details>
 
@@ -659,7 +667,206 @@ The horizontal arrow points to the left, and the vertical arrow points up. The t
 <details>
     <summary>Click here when you have your answer in mind</summary>
 
-**The answer is 4.5 m. We must use the equation $a^2 + b^2 = c^2$. Let's plug in, $(-2)^2 + (4)^2 = c^2$. So, $4 + 16 = c^2$. Finally, $\sqrt{20} = 4.5$ m.
+**The answer is 4.5 m.** We must use the equation $a^2 + b^2 = c^2$. Let's plug in, $(-2)^2 + (4)^2 = c^2$. So, $4 + 16 = c^2$. Finally, $\sqrt{20} = 4.5$ m.
 
 </details>
+
+### Trigonometric Values
+
+Trigonometry in physics will also produce numbers. Let's take a peak at the image below:
+
+<img src="images/two_dimensional_4.png" style="display:block; margin:auto;">
+
+Recall the trigonometric functions and the mnemonic soh-cah-toa.
+
+<img src="images/reference_table.png" style="display:block; margin:auto;">
+
+Using these tools, **find the value for the total vector and its missing component.**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The total vector is 12 m/s and its component is 10.4 m/s.** Solving for the total vector first, let's use sine. Opposite from the angle is 6 m/s and hypotenuse is unknown. So, sine($30^\circ$) = $\frac{6 m/s}{v_T}$. Then, $v_T \times$ sine($30^\circ$) = 6 m/s. On the table, sine($30^\circ$) is equal to $\frac{1}{2}$. Divide $\frac{1}{2}$ by 6 m/s. Finally, $\frac{6}{1} \times \frac{2}{1}$ = 12 m/s. Now let's solve for the component, tangent is best for this. Opposite from the angle is 6 m/s and adjacent is unknown. So, tan($30^\circ$) = $\frac{6 m/s}{v_x}$. Then, $v_x \times$ tan($30^\circ$) = 6 m/s. Divide tan($30^\circ$) by 6 m/s. Finally, $v_x \approx 10.4$.
+
+</details>
+
+Let's explore the use of inverse tangent. Commonly known as arctangent, this function is used to find angles. Let's picture this.
+
+<img src="images/two_dimensional_5.png" style="display:block; margin:auto;">
+
+The angle is unknown, but its opposite and adjacent sides from are not. tan ***θ*** = $\frac{8}{5}$. Now switch, ***θ*** = tan$^-1$ ($\frac{8}{5}$). Plug into a calculator. Finally, the angle is 58$^\circ$ rounded to the nearest whole number.
+
+Analyze the image below. **Which of the following values are equal to $\frac{b}{c}$?**
+
+<img src="images/two_dimensional_6.png">
+
+A. sin($40^\circ$)
+B. cosine($40^\circ$)
+C. tangent($40^\circ$)
+D. sin($80^\circ$)
+E. cosine($80^\circ$)
+F. tangent($80^\circ$)
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answers are A and E.** For A, opposite to $40^\circ$ is b. Hypotenuse is c. The sine functions produces $\frac{b}{c}$. For E, adjacent to $80^\circ$ is b. Hypotenuse is c. The cosine function produces $\frac{b}{c}$.
+
+</details>
+
+### Projectile Motion
+
+When analyzing motion in two dimensions, we will treat the horizontal and vertical components separately and independently. They do not affect each other. Trigonometry gave a foundation for the mechanics of 2D motion. Let's look at released and launched projectiles.
+
+Three steel balls are launched by catapults at an angle. **Which of them below has the highest vertical height, longest air time, and greatest horizontal distance?**
+
+<img src="images/projectile_motion.png" style="display:block; margin:auto;">
+
+<img src="images/projectile_motion_2.png" style="display:block; margin:auto;">
+
+<img src="images/projectile_motion_3.png" style="display:block; margin:auto;">
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The second steel ball has the highest vertical height and the longest air time. The first steel ball has the greatest horizontal distance.** To determine vertical height, look for a parabola or peak. In this case, the second ball has the highest. To determine air time, look for the highest vertical velocity. In this case, the second ball has the longest. Note that the greatest angle will produce a high vertical velocity. Now, horizontal distance is a bit different. It involves time length and horizontal speed. Both are determined by the two velocity dimensions. Meaning a balance is key to maximize horizontal distance. A launch angle closest to $45^\circ$ will do the job. Of course, the first steel ball is the best candidate.
+
+</details>
+
+Remember to merge this material with the triangles we covered previously.
+
+<img src="images/two_dimensional_7.png" style="display:block; margin:auto;">
+
+The launch angle is at a balanced $45^\circ$. Physics can take on many forms. Get to a comfortable level with trigonometry.
+
+Look at the graphs below. **Why do you think horizontal velocity stays constant unlike its vertical counterpart?**
+
+<img src="images/dimensional_graph.png">
+
+<img src="images/dimensional_graph_2.png">
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**Horizontal velocity stays constant because gravity only affects vertical motion.** There are zero forces present in the horizontal dimension. We know that gravity affects acceleration (g = -9.8 m/s$^2$), so that would mean horizontal velocity does not have any. In other words, it stays constant. Launched at an angle, both vertical and horizontal components will have the same initial velocity. But vertical velocity is the only one changing constantly.
+
+</details>
+
+Remember to use different graphs for the two dimensions.
+
+Let's focus on the numbers aspect now.
+
+### Dimensional Calculations
+
+Analyze the graph below. **What is the vertical displacement?**
+
+<img src="images/dimensional_graph_3.png">
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is -102 m.** To find vertical displacement, we must first calculate time. Take $\Delta x = v_i t + \frac{1}{2} a t^2$. First, let's determine initial horizontal velocity. cos(76$^\circ$) = $\frac{a}{4.2}$. a $\approx$ 1 m. Now plug in, 5 = 1 $\times$ $t_x$. So, t = 5s. Let's determine initial vertical velocity. sin(76$^\circ$) = $\frac{o}{4.2}$. o $\approx$ 4.1 m. Plug in again, $\Delta y = 4.1 \times 5 + \frac{1}{2} -9.8 (5)^2$. Simplify to $\Delta y = 20.5 - 122.5$. Finally, $\Delta y$ (vertical displacement) = -102 m. Remember that vertical displacement is on the y-axis, and blank on this diagram to strengthen your identification skills.
+
+</details>
+
+#### Quadratic Formula
+
+The quadratic formula will be used in certain physics problems. Take the one we just did for example. 
+
+Now, obviously we didn't know the vertical displacement beforehand. But if we did, $\Delta y = v_i t + \frac{1}{2} a t^2$ would be used. Plug in, $-102 = 4.1t - 4.9t^2$. Set equal to zero, $-4.9t^2 + 4.1t + 102 = 0$. Focus on the three. a = -4.9. b = 4.1. c = 102. Next, find the value of t using the quadratic formula. **Find the two values yourself.**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answers are -4.2 and 5.** Let's solve for time. Recall, $\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Now solve, $\frac{-4.1 \pm \sqrt{16.81 + 1999.2}}{-9.8}$. Then, $\frac{-4.1 \pm 44.9}{-9.8}$. Finally, we get -4.2 and 5. Time cannot be negative, so **5 seconds is the correct answer.**
+
+</details>
+
+##### Quadratic Application
+
+You will have to use the quadratic formula more than you think. In physics, you will encounter real-world scenarios. So, let's shift our focus from learning this equation to applying it.
+
+**How long is the football in the air before hitting the ground?**
+
+<img src="images/dimensional_graph_4.png">
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The answer is 2.5 seconds.** Combine $\Delta y = v_i t + \frac{1}{2} a t^2$ with the quadratic formula. Remember that vertical, not horizontal, displacement is negative if we assume down as the negative direction. Solve for initial vertical velocity, sin($22^\circ$) = $\frac{o}{6.2}$. o $\approx$ 2.3 m/s. So, $-25 = 2.3t - 4.9t^2$. Set equal to zero, $-4.9t^2 + 2.3t + 25 = 0$. Focus on the three. a = -4.9. b = 2.3. c = 25. Now use the quadratic formula. $\frac{-2.3 \pm \sqrt{5.29 + 490}}{-9.8}$. Simplify, $\frac{-2.3 \pm 22.3}{-9.8}$. Finally, we get -2s and 2.5s. Time cannot be negative, so **2.5 seconds is the correct answer.**
+
+</details>
+
+### Dimensional Problems
+
+#### Problem 1
+
+A test missile is launched vertically at a speed of 100 m/s and reaches a peak after 20 seconds. Assume up and rightward is the positive direction. **What is the vertical displacement?** Bonus: what is the horizontal displacement?
+
+Tip: create a graph
+
+Round to the nearest whole number.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The vertical displacement is 40 meters and the horizontal displacement is 0 meters.** Since we want the missile's vertical displacement at its peak, we know our answer has to be positive (up is classified as such). Use $\Delta y = v_i t + \frac{1}{2} a t^2$. Plug in, $\Delta y = 100(20) - 4.9(20)^2$. Solve, $\Delta y = 2,000 - 1,960$. Finally, $\Delta y = 40$ m. Since the missile is launched vertically, there will be zero horizontal displacement. If an object is launched horizontally, there would be displacement across both dimensions assuming it falls.
+
+<img src="images/dimensional_graph_5.png">
+
+</details>
+
+#### Problem 2
+
+An archer is practicing for a national tournament. He releases an arrow horizontally and hits a target 35 meters away before falling for 10 meters. Assume up and rightward is the positive direction. **What is the initial horizontal velocity?** Bonus: what is the initial vertical velocity?
+
+Tip: create a graph
+
+Round to the nearest whole number.
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+**The initial horizontal velocity is 25 m/s and the initial vertical velocity is 0 m/s.** Use $\Delta x = v_i t + \frac{1}{2} a t^2$. Plug in, $35 = v_i t$. We need to find the value of t. Let's switch to $\Delta y = v_i t + \frac{1}{2} a t^2$. Plug in, $-10 = -4.9t^2$. Now, t $\approx$ 1.43. Switch over to $35 = v_i t$. Plug in, $35 = 1.43 v_i$. Finally, $v_i = 25$ m/s. Since the arrow is launched horizontally, there will be no initial vertical velocity. And vice versa.
+
+<img src="images/dimensional_graph_6.png">
+
+</details>
+
+### Think Like a Physicist
+
+A dart is thrown with a velocity of 4 m/s and lands on the board 5 seconds later. **Draw dimensional graphs for velocity, acceleration, and position that most accurately represent the situation described.**
+
+<details>
+    <summary>Click here when you have your answer in mind</summary>
+
+<img src="images/dimensional_graph_7.png">
+
+<img src="images/dimensional_graph_8.png">
+
+<img src="images/dimensional_graph_9.png">
+
+<img src="images/dimensional_graph_10.png">
+
+<img src="images/dimensional_graph_11.png">
+
+<img src="images/dimensional_graph_12.png">
+
+</details>
+
+Analyze the graphs above and remember that the dimensions (x,y) are treated independently from each other. Recall the rules for them (i.e. x has zero acceleration while y maintains -9.8$m/s^2$).
+
+### Practice
+
+[Let's test your knowledge, take the dimensions & trigonometry quiz here](Quiz4.html)
+
+## Recap
+
+Congrats! You have finished Unit 1. If you flew through it, then the next units will be the same. Mastering physics does not only take skill, but also confidence. Kinematics focused on motion without regard to forces such as wind and air resistance. Gravity being the only exception. Definitions and variables were key to understanding these basic concepts. Below, you will dive deeper and explore what the unit has left out.
+
+# Unit 2: Torque & Rotational Dynamics
+
+
+
+### Lesson 1
 
